@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/works_bootstrap.css">
+    <title>G.S Web Design - Works</title>
+</head>
+<body>
+    <!-- Esta es la página works modo Flexbox-->
+    <header>
+        <a  href="../index.html" class="headerFooter__logo"><img src="../images/logo.png" alt="logo"></a>
+        <nav> 
+            <ul>
+                <li><a href="../index.html">Home </a></li>
+                <li><a href="../pages/works.html">Works </a></li>
+                <li><a href="../pages/about.html">About </a></li>
+                <li><a href="../pages/resume.html">Resume </a></li>
+                <li><a href="../pages/contact.html">Contact </a></li>
+            </ul>
+        </nav>
+        <ul class="headerFooter__contactLogos">
+            <li><a href="https://github.com/GermanSiliprandi"><img src="../images/github.png" alt="github link"></a></li>
+            <li><a href="https://www.linkedin.com/in/german-daniel-siliprandi-2487a082/"><img src="../images/linkedin.png" alt="linkedin link"></a></li>
+            <li><a href="mailto:german.siliprandi@gmail.com"><img src="../images/gmail.png" alt="mail link"></a></li>
+        </ul> 
+    </header>
+    <main class="main__carrousel">
+        <article>
+            <h1>Most Recent Works</h1>
+            <!-- La idea en el siguiente nav es que al apretar los botones izquierda y derecha, se vaya pasando por los trabajos recientes-->
+            <nav>
+            <button type="button" class="main__lButton"></button> 
+            <a href="work1.html"><img src="../images/work1.png" alt="Work 1"></a>
+            <a href="work2.html"><img src="../images/work2.png" alt="Work 2"></a>
+            <a href="work3.html"><img src="../images/work3.png" alt="Work 3"></a>
+            <button type="button" class="main__lButton main__lButton--right"></button>
+            </nav>
+        </article> 
+    </main> 
+    <article>
+        <h1>All My Works</h1>
+        <!-- La idea de la tabla es que al clickear en la imagen de mis trabajos te lleven a una página web específica del trabajo, donde se explica el contenido con mayor detalle. Como todavía no tengo ningún trabajo hecho, no están hechas.-->
+        <table class="section__tableFormat">
+            <tr>
+                <th>Work</th>
+                <th>Date</th>
+                <th>Brief Description</th>
+                <th>What I did</th>
+            </tr>
+            <tr>
+                <td><a href="work1.html"><img src="../images/work1.png" alt="work 1"></a></td>
+                <td><time>July 2021</time> </td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, possimus?</td>
+                <td>Front End</td>
+            </tr>
+            <tr>
+                <td><a href="work2.html"><img src="../images/work2.png" alt="work 2"></a></td>
+                <td><time>June 2021</time></td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, possimus?</td>
+                <td>Front End</td>
+            </tr>
+            <tr>
+                <td><a href="work3.html"><img src="../images/work3.png" alt="work 3"></a></td>
+                <td><time>January 2021</time></td>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, possimus?</td>
+                <td>Front End</td>
+            </tr>
+        </table>
+    </article>
+    <footer>
+        <a  href="../index.html" class="headerFooter__logo"><img src="../images/logo.png" alt="logo"></a>
+        <p>Designed by German Siliprandi</p>
+        <ul class="headerFooter__contactLogos">   
+            <li><a href="https://github.com/GermanSiliprandi"><img src="../images/github.png" alt="github link"></a></li>
+            <li><a href="https://www.linkedin.com/in/german-daniel-siliprandi-2487a082/"><img src="../images/linkedin.png" alt="linkedin link"></a></li>
+            <li><a href="mailto:german.siliprandi@gmail.com"><img src="../images/gmail.png" alt="mail link"></a></li>
+        </ul> 
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"> </script>
+</body>
+</html>

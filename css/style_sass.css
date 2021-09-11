@@ -1,0 +1,478 @@
+/*Variables*/
+/*Mixins*/
+/*CSS Beginning*/
+@font-face {
+  font-family: "Post No Bills Colombo SemiBold";
+  src: url(../fonts/postnobillscolombo-semibold.ttf) format("truetype"); }
+
+@font-face {
+  font-family: "Post No Bills Colombo Bold";
+  src: url(../fonts/postnobillscolombo-bold.ttf) format("truetype"); }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-image: url(../images/body_background.jpg);
+  background-repeat: repeat;
+  background-size: contain;
+  font-family: "Post No Bills Colombo SemiBold";
+  color: white;
+  text-align: center; }
+
+/*Footer*/
+footer {
+  background: rgba(39, 38, 41, 0.9);
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center; }
+  footer p {
+    max-width: fit-content;
+    font-size: 4vw; }
+
+/*header*/
+header {
+  background: rgba(39, 38, 41, 0.7);
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: 45px; }
+  header nav {
+    display: flex;
+    width: 60vw;
+    justify-content: center; }
+    header nav ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-between; }
+      header nav ul li {
+        display: flex;
+        flex-wrap: nowrap;
+        list-style: none;
+        justify-content: center; }
+        header nav ul li a {
+          text-decoration: none;
+          font-family: "Post No Bills Colombo Bold";
+          color: white;
+          font-size: 3.5vw; }
+
+/*Logo*/
+.headerFooter__logo {
+  display: flex;
+  margin-left: 1.5vw; }
+  .headerFooter__logo img {
+    width: 17vw; }
+
+/*Contact Logos*/
+.headerFooter__contactLogos {
+  display: flex;
+  justify-content: space-between;
+  width: 12vw;
+  margin-right: 1.8vw; }
+  .headerFooter__contactLogos li {
+    display: flex; }
+    .headerFooter__contactLogos li a {
+      display: flex; }
+      .headerFooter__contactLogos li a img {
+        width: 4vw; }
+
+/*Mi Foto*/
+.section__myPhoto {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px; }
+  .section__myPhoto img {
+    width: 100px; }
+
+/*Index About Me*/
+.article__aboutMe {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px; }
+  .article__aboutMe section {
+    background: rgba(39, 38, 41, 0.7);
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    font-size: 18px; }
+  .article__aboutMe p {
+    margin: 10px; }
+
+/*Index Main*/
+.main__carrousel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px; }
+  .main__carrousel article {
+    display: flex;
+    flex-direction: column; }
+    .main__carrousel article nav {
+      display: flex;
+      width: 95vw;
+      justify-content: space-evenly;
+      align-items: center; }
+  .main__carrousel img {
+    width: 25vw; }
+
+.main__lButton {
+  background-image: url(../images/left_buttton.png);
+  background-size: 4vw 18vw;
+  background-position-x: -3px;
+  height: 18vw;
+  width: 4vw; }
+
+.main__lButton--right {
+  background-image: url(../images/right_button.png); }
+
+/*About Main*/
+.main__about {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px; }
+  .main__about section {
+    display: flex;
+    flex-direction: column;
+    width: 90vw; }
+  .main__about div {
+    background: rgba(39, 38, 41, 0.7);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px; }
+  .main__about p {
+    margin: 10px; }
+
+/*Tabla Works*/
+.section__tableFormat {
+  font-style: normal;
+  border: 1px solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width: 90vw;
+  font-size: 13px; }
+  .section__tableFormat th {
+    font-family: "Post No Bills Colombo Bold";
+    border: 1px solid; }
+  .section__tableFormat td {
+    border: 1px solid; }
+  .section__tableFormat a img {
+    width: 25vw; }
+
+/*Formulario Contact*/
+.main__formulario {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px; }
+  .main__formulario textarea {
+    width: 90%;
+    font-size: 15px; }
+
+form label {
+  font-family: "Post No Bills Colombo Bold"; }
+
+input {
+  font-family: "Post No Bills Colombo SemiBold";
+  font-size: 20px; }
+
+/* Aca comienza el Grid para la pagina Resume*/
+#body__fatherGridResume {
+  display: grid;
+  grid-template-areas: "headerGrid" "mainGrid" "footerGrid";
+  grid-template-rows: 80px auto 80px;
+  grid-template-columns: 100%;
+  align-content: space-between;
+  grid-row-gap: 40px;
+  margin: 0px; }
+
+.header__resume {
+  grid-area: headerGrid; }
+
+.footer__resume {
+  grid-area: footerGrid; }
+
+.main__resume {
+  display: grid;
+  grid-area: mainGrid;
+  grid-template-areas: "articleResumeGrid"; }
+  .main__resume article {
+    display: grid;
+    grid-area: articleResumeGrid;
+    grid-template-areas: "myImageGrid" "personalInfoGrid" "jobExperienceGrid" "studiesGrid" "skillsGrid";
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-row-gap: 40px; }
+    .main__resume article h2 {
+      text-decoration: underline; }
+
+.main__imageResume {
+  display: grid;
+  grid-area: myImageGrid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center; }
+  .main__imageResume img {
+    width: 100px; }
+
+.main__personalInfoResume {
+  display: grid;
+  grid-area: personalInfoGrid;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: auto;
+  grid-template-areas: "h1PersonalInfo" "personalInfo"; }
+  .main__personalInfoResume h1 {
+    grid-area: h1PersonalInfo; }
+  .main__personalInfoResume table {
+    grid-area: personalInfo;
+    width: 90vw;
+    font-style: normal;
+    border: 1px solid;
+    font-size: 3vw; }
+    .main__personalInfoResume table th {
+      font-family: "Post No Bills Colombo Bold";
+      border: 1px solid; }
+    .main__personalInfoResume table td {
+      border: 1px solid; }
+
+.main__jobExperienceResume {
+  display: grid;
+  grid-area: jobExperienceGrid;
+  justify-content: center;
+  align-content: center;
+  align-items: start;
+  justify-items: center;
+  grid-template-areas: " h1JobExperienceResume  h1JobExperienceResume h1JobExperienceResume" "job1ResumeGrid job2ResumeGrid job3ResumeGrid";
+  grid-template-columns: 30vw 30vw 30vw;
+  grid-column-gap: 1.5vw;
+  grid-row-gap: 0px; }
+  .main__jobExperienceResume h1 {
+    grid-area: h1JobExperienceResume; }
+  .main__jobExperienceResume li {
+    list-style: none; }
+    .main__jobExperienceResume li h2 {
+      font-size: 4vw; }
+    .main__jobExperienceResume li li {
+      list-style: url(../images/star.png);
+      list-style-position: inside;
+      font-size: 3vw;
+      width: 95%;
+      margin-bottom: 10px; }
+
+.main__jobResume, .main__studyResume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: rgba(39, 38, 41, 0.9); }
+
+.main__jobResume--job1 {
+  grid-area: job1ResumeGrid; }
+
+.main__jobResume--job2 {
+  grid-area: job2ResumeGrid; }
+
+.main__jobResume--job3 {
+  grid-area: job3ResumeGrid; }
+
+.main__jobResumeH2 {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  width: 95%; }
+
+.main__resumeTasks ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.main__studiesResume {
+  display: grid;
+  grid-area: studiesGrid;
+  grid-template-areas: "h1StudiesGrid h1StudiesGrid" "study1Grid study2Grid";
+  grid-template-columns: 40vw 40vw;
+  align-content: center;
+  justify-content: center;
+  grid-column-gap: 15vw;
+  grid-row-gap: 0px; }
+  .main__studiesResume li {
+    list-style: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    width: 95%; }
+  .main__studiesResume h1 {
+    grid-area: h1StudiesGrid; }
+  .main__studiesResume ul li h2 {
+    text-decoration: none;
+    font-size: 4vw; }
+
+.main__studyResume--study1 {
+  grid-area: study1Grid; }
+
+.main__studyResume--study2 {
+  grid-area: study2Grid; }
+
+.main__skillsResume {
+  display: grid;
+  grid-area: skillsGrid;
+  grid-template-areas: "h1SkillsGrid h1SkillsGrid" "skills1Grid skills2Grid";
+  grid-template-columns: 30vw 30vw;
+  align-content: center;
+  justify-content: center;
+  grid-column-gap: 25vw;
+  grid-row-gap: 0px; }
+  .main__skillsResume li {
+    list-style: url(../images/star.png);
+    list-style-position: inside;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 4vw; }
+  .main__skillsResume h1 {
+    grid-area: h1SkillsGrid; }
+
+.main__skillResume {
+  background: rgba(39, 38, 41, 0.9); }
+
+.main__skillResume--skill1 {
+  grid-area: skills1Grid; }
+
+.main__skillResume--skill2 {
+  grid-area: skills2Grid; }
+
+/*Fin del Resume grid*/
+/*Formato de Texto Generico*/
+h1 {
+  font-family: "Post No Bills Colombo Bold";
+  font-style: normal;
+  font-size: 40px;
+  text-decoration: underline;
+  margin-bottom: 15px; }
+
+.text20 {
+  font-size: 20px; }
+
+.noDecoration {
+  text-decoration: none; }
+
+@media only screen and (min-width: 768px) {
+  /* Menu Superior*/
+  header nav {
+    width: 450px; }
+  header nav ul li a {
+    font-size: 30px; }
+  /* logo*/
+  .headerFooter__logo {
+    margin-left: 10px; }
+    .headerFooter__logo img {
+      width: 140px; }
+  /* Logos de contactos*/
+  .headerFooter__contactLogos {
+    width: 120px;
+    margin-right: 15px; }
+    .headerFooter__contactLogos li a img {
+      width: 40px; }
+  /*Footer*/
+  footer p {
+    font-size: 20px; }
+  /*Index About Me*/
+  .article__aboutMe section {
+    width: 75vw; }
+  .article__aboutMe p {
+    margin: 10px; }
+  /* Index Main*/
+  .main__carrousel article nav {
+    width: 75vw; }
+  .main__carrousel img {
+    width: 20vw; }
+  /*About Main*/
+  .main__about section {
+    width: 75vw; }
+  /* Works Table */
+  .section__tableFormat {
+    width: 80vw;
+    font-size: 20px; }
+    .section__tableFormat td a img {
+      width: 20vw; }
+  /*Formulario Contact*/
+  .main__formulario textarea {
+    width: 75%; }
+  /* Aca comienza el Grid para la pagina Resume*/
+  .main__personalInfoResume table {
+    width: 75vw; }
+  .main__jobExperienceResume {
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-column-gap: 7vw; }
+    .main__jobExperienceResume li h2 {
+      font-size: 30px; }
+    .main__jobExperienceResume li li {
+      font-size: 20px; }
+  .main__studiesResume {
+    grid-template-columns: 30vw 30vw;
+    grid-column-gap: 20vw; }
+    .main__studiesResume ul li h2 {
+      font-size: 30px; }
+  .main__skillResume {
+    grid-column-gap: 20vw; }
+    .main__skillResume li {
+      font-size: 30px; }
+  /*Fin del Grid Resume*/ }
+
+@media only screen and (min-width: 1024px) {
+  /* Menu Superior*/
+  header nav {
+    width: 660px; }
+    header nav ul li a {
+      font-size: 35px; }
+  .headerFooter__logo img {
+    width: 170px; }
+  /* Logos de contactos*/
+  .headerFooter__contactLogos {
+    width: 150px; }
+    .headerFooter__contactLogos li a img {
+      width: 50px; }
+  /*Index About Me*/
+  .article__aboutMe section {
+    width: 50vw; }
+  /* Index Main*/
+  .main__carrousel img {
+    width: 15vw; }
+  .main__carrousel article nav {
+    width: 60vw; }
+  /*About Main*/
+  .main__about section {
+    width: 50vw; }
+  /* Works Table */
+  .section__tableFormat {
+    width: 65vw; }
+    .section__tableFormat td a img {
+      width: 15vw; }
+  /*Formulario Contact*/
+  .main__formulario textarea {
+    width: 60%; }
+  /* Aca comienza el Grid para la pagina Resume*/
+  .main__personalInfoResume table {
+    width: 60vw;
+    font-size: 20px; }
+  .main__skillsResume {
+    grid-template-columns: 20vw 20vw;
+    grid-column-gap: 30vw; }
+  /*Fin del Grid Resume*/ }

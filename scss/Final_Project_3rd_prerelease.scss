@@ -1,0 +1,644 @@
+/*Variables*/
+$semi_bold:"Post No Bills Colombo SemiBold";
+$bold: "Post No Bills Colombo Bold";
+$header_footer_height:80px;
+$margin_b:40px;
+$background_07: rgba(39, 38, 41, 0.7);
+$background_09: rgba(39, 38, 41, 0.9);
+$text_color:white;
+$s_between: space-between;
+$nav_width_mobile:60vw;
+$nav_width_desktop:660px;
+$menu_text_size_mobile:3.5vw;
+$logo_width_mobile:17vw;
+$contact_logos_width_mobile:12vw;
+$contact_logo_width_mobile:$contact_logos_width_mobile/3;
+$text_block_width_mobile:90vw;
+$table_block_width_mobile:90vw;
+$table_border:1px solid;
+$table_image_width_mobile:25vw;
+$my_image_width:100px;
+/*Mixins*/
+@mixin footerMixin ($background, $height, $display, $flex-direction, $flex-wrap, $justify-content, $align-items){
+    background: $background;
+    height: $height;
+    display: $display;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+@mixin myPhotoMixin ($display, $justify-content, $margin-bottom) {
+    display: $display;
+    justify-content: $justify-content;
+    margin-bottom: $margin-bottom;
+}
+@mixin imageResumeMixin ($display, $grid-area, $justify-content, $align-content, $align-items, $justify-items) {
+    display: $display;
+    grid-area: $grid-area;
+    justify-content: $justify-content;
+    align-content: $align-content;
+    align-items: $align-items;
+    justify-items: $justify-items;
+}
+/*CSS Beginning*/
+@font-face {
+    font-family: $semi_bold;
+    src: url(../fonts/postnobillscolombo-semibold.ttf) format("truetype");
+}
+@font-face {
+    font-family: $bold ;
+    src: url(../fonts/postnobillscolombo-bold.ttf) format("truetype");
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url(../images/body_background.jpg);
+    background-repeat:repeat;
+    background-size: contain;
+    font-family: $semi_bold;
+    color: $text_color;
+    text-align: center;
+}
+/*Footer*/
+footer{
+    @include footerMixin($background_09 ,$header_footer_height ,flex , row, nowrap, $s_between, center);
+    p{
+        max-width: fit-content;
+        font-size: 4vw;
+    }
+}
+/*header*/
+header{
+    @include footerMixin($background_07 ,$header_footer_height ,flex , row, nowrap, $s_between, center);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-bottom: 45px;
+    nav{
+        display: flex;
+        width: $nav_width_mobile;
+        justify-content: center;
+        ul{
+            display: flex;
+            width: 100%;
+            justify-content: $s_between;
+            li{
+                display: flex;
+                flex-wrap: nowrap;
+                list-style: none;
+                justify-content: center;
+                a{
+                    text-decoration: none;
+                    font-family: $bold;
+                    color: $text_color;
+                    font-size: $menu_text_size_mobile;
+                }
+            }
+        }
+    }
+}
+/*Logo*/
+.headerFooter__logo{
+    display: flex;
+    margin-left: 1.5vw;
+    img{
+        width: $logo_width_mobile;
+    }
+}
+/*Contact Logos*/
+.headerFooter__contactLogos{
+    display: flex;
+    justify-content: $s_between;
+    width: $contact_logos_width_mobile;
+    margin-right: 1.8vw;
+    li{
+        display: flex;
+        a{
+            display: flex;
+            img{
+                width:$contact_logo_width_mobile;
+            }
+        }
+    }
+}
+/*Mi Foto*/
+.section__myPhoto{
+    @include myPhotoMixin(flex, center, $margin_b);
+    img{
+        width: 100px;
+    }
+}
+/*Index About Me*/
+.article__aboutMe{
+    @include myPhotoMixin(flex, center, $margin_b);
+    section{
+        background: $background_07;
+        display:flex;
+        flex-direction: column;
+        width: 90vw;
+        font-size: 18px;
+    }
+    p{
+        margin: 10px;
+    }
+}
+/*Index Main*/
+.main__carrousel{
+    @include myPhotoMixin(flex, center, $margin_b);
+    article{
+        display: flex;
+        flex-direction: column;
+        nav{
+            display: flex;
+            width: 95vw;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+    img{
+        width: 25vw;
+    }
+}
+.main__lButton{
+    background-image: url(../images/left_buttton.png);
+    background-size: 4vw 18vw;
+    background-position-x: -3px;
+    height: 18vw;  
+    width: 4vw;
+}
+.main__lButton--right{
+    background-image: url(../images/right_button.png);
+}
+/*About Main*/
+.main__about{
+    @include myPhotoMixin(flex, center, $margin_b);
+    section{
+        display: flex;
+        flex-direction: column;
+        width: $text_block_width_mobile;
+    }
+    div{
+        background: $background_07;
+        height:fit-content;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 18px;
+    }
+    p{
+        margin: 10px;
+    }
+}
+/*Tabla Works*/
+.section__tableFormat{
+    font-style: normal;
+    border: $table_border;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $margin_b;
+    width: $table_block_width_mobile;
+    font-size: 13px;
+    th{
+        font-family: $bold;
+        border: $table_border;
+    }
+    td{
+        border: $table_border;
+    }
+    a{
+        img{
+            width: $table_image_width_mobile;
+        }
+    }
+}
+/*Formulario Contact*/
+.main__formulario{
+    display: flex;
+    flex-direction: column;
+    width: $text_block_width_mobile;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: $margin_b;
+    textarea{
+        width: 90%;
+        font-size: 15px;
+    }
+}
+form label{
+    font-family: $bold;
+}
+input{
+    font-family: $semi_bold;
+    font-size: 20px;
+}
+/* Aca comienza el Grid para la pagina Resume*/
+#body__fatherGridResume{
+    display: grid;
+    grid-template-areas: 
+    "headerGrid"
+    "mainGrid"
+    "footerGrid";
+    grid-template-rows: $header_footer_height auto $header_footer_height ;
+    grid-template-columns: 100%;
+    align-content: space-between;
+    grid-row-gap: $margin_b;
+    margin: 0px;
+}
+@each $headerFooter in header, footer {
+    .#{$headerFooter}__resume{
+        grid-area: #{$headerFooter}Grid;
+    }
+}
+.main__resume{
+    display: grid;
+    grid-area: mainGrid;
+    grid-template-areas: "articleResumeGrid";
+    article{
+        display: grid;
+        grid-area: articleResumeGrid;
+        grid-template-areas: "myImageGrid"
+        "personalInfoGrid"
+        "jobExperienceGrid"
+        "studiesGrid"
+        "skillsGrid";
+        grid-template-columns: 100%;
+        justify-content: center;
+        align-content: center;
+        grid-row-gap: $margin_b;
+        h2{
+            text-decoration: underline;
+        }
+    }
+}
+.main__imageResume{
+    @include imageResumeMixin (grid, myImageGrid, center, center, center, center);
+    img{
+        width: $my_image_width;
+    }
+}
+.main__personalInfoResume{
+    @include imageResumeMixin (grid, personalInfoGrid, center, center, center, center);
+    grid-template-columns: auto;
+    grid-template-areas: "h1PersonalInfo"
+    "personalInfo";
+    h1{
+        grid-area: h1PersonalInfo;
+    }
+    table{
+        grid-area: personalInfo;
+        width: $table_block_width_mobile;
+        font-style: normal;
+        border: $table_border;
+        font-size: 3vw;
+        th{
+            font-family: $bold;
+            border: $table_border;
+        }
+        td{
+            border: $table_border;
+        }
+    }
+}.main__jobExperienceResume{
+    @include imageResumeMixin (grid, jobExperienceGrid, center, center, start, center);
+    grid-template-areas: " h1JobExperienceResume  h1JobExperienceResume h1JobExperienceResume"
+    "job1ResumeGrid job2ResumeGrid job3ResumeGrid";
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-column-gap: 1.5vw;
+    grid-row-gap: 0px;
+    h1{
+        grid-area: h1JobExperienceResume;
+    }
+    li{
+        list-style: none;
+        h2{
+            font-size: 4vw;
+        }
+        li{
+            list-style: url(../images/star.png);
+            list-style-position: inside;
+            font-size: 3vw;
+            width: 95%;
+            margin-bottom: 10px;
+        }
+    }
+}
+.main__jobResume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: $background_09;
+}
+@for $job from 1 through 3{
+.main__jobResume--job#{$job}{
+    grid-area: job#{$job}ResumeGrid;
+}
+}
+.main__jobResumeH2{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 95%;
+}
+.main__resumeTasks{
+    ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.main__studiesResume{
+    display: grid;
+    grid-area: studiesGrid;
+    grid-template-areas: "h1StudiesGrid h1StudiesGrid" "study1Grid study2Grid";
+    grid-template-columns: 40vw 40vw;
+    align-content: center;
+    justify-content: center;
+    grid-column-gap: 15vw;
+    grid-row-gap: 0px;
+    li{
+        list-style: none;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        width: 95%;
+    }
+    h1{
+        grid-area: h1StudiesGrid;
+    }
+    ul{
+        li{
+            h2{
+                text-decoration: none;
+                font-size: 4vw;
+            }
+        }
+    }
+}
+.main__studyResume{
+    @extend .main__jobResume;
+}
+@for $study from 1 to 3 {
+.main__studyResume--study#{$study}{
+    grid-area: study#{$study}Grid;
+}
+}
+.main__skillsResume{
+    display: grid;
+    grid-area: skillsGrid;
+    grid-template-areas: "h1SkillsGrid h1SkillsGrid" "skills1Grid skills2Grid";
+    grid-template-columns:30vw 30vw;
+    align-content: center;
+    justify-content: center;
+    grid-column-gap: 25vw;
+    grid-row-gap: 0px;
+    li{
+        list-style: url(../images/star.png);
+        list-style-position: inside;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-size: 4vw;
+    }
+    h1{
+        grid-area: h1SkillsGrid;
+    }
+}
+.main__skillResume{
+    background: $background_09;
+}
+@for $skill from 1 to 3{
+.main__skillResume--skill#{$skill}{
+    grid-area: skills#{$skill}Grid;
+}
+}
+/*Fin del Resume grid*/
+/*Formato de Texto Generico*/
+h1 {
+    font-family: "Post No Bills Colombo Bold";
+    font-style: normal;
+    font-size: 40px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+.text20{
+    font-size: 20px;
+}
+.noDecoration{
+    text-decoration: none;
+}
+@media only screen and (min-width:768px){
+    /* Menu Superior*/
+    header nav {
+        width: 450px;
+    }
+    header nav ul li a{
+        font-size: 30px;
+    }
+    /* logo*/
+    .headerFooter__logo{
+        margin-left: 10px;
+        img{
+            width: 140px;
+        }
+    }
+    /* Logos de contactos*/
+    .headerFooter__contactLogos{
+        width: 120px;
+        margin-right: 15px;
+        li{
+            a{
+                img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+    /*Footer*/
+    footer p{
+        font-size: 20px;
+    }
+    /*Index About Me*/
+    .article__aboutMe{ 
+        section{
+            width: 75vw;
+        }
+        p{
+            margin: 10px;
+        }
+    }
+    /* Index Main*/
+    .main__carrousel{
+        article{
+            nav{
+                width: 75vw;
+            }
+        }
+        img{
+            width: 20vw;
+        }
+    }
+    /*About Main*/
+    .main__about{
+        section{
+            width: 75vw;
+        }
+    }
+    /* Works Table */
+    .section__tableFormat{
+        width: 80vw;
+        font-size: 20px;
+        td{
+            a{
+                img{
+                    width: 20vw;
+                }
+            }
+        }
+    }
+    /*Formulario Contact*/
+    .main__formulario{
+        textarea{
+            width: 75%;
+        }
+    }
+    /* Aca comienza el Grid para la pagina Resume*/
+    .main__personalInfoResume{
+        table{
+            width: 75vw;
+        }
+    }
+    .main__jobExperienceResume{
+        grid-template-columns: 25vw 25vw 25vw;
+        grid-column-gap: 7vw;
+        li{
+            h2{
+                font-size: 30px;
+            }
+            li{
+                font-size: 20px;
+            }
+        }
+    }
+    .main__studiesResume{
+        grid-template-columns:30vw 30vw;
+        grid-column-gap: 20vw;
+        ul{
+            li{
+                h2{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    .main__skillResume{
+        grid-column-gap: 20vw;
+        li{
+            font-size: 30px;
+        }
+    }
+    /*Fin del Grid Resume*/
+}
+@media only screen and (min-width:1024px){
+    /* Menu Superior*/
+    header{
+        nav{
+            width: $nav_width_desktop;
+            ul{
+                li{
+                    a{
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+    .headerFooter__logo{
+        img{
+            width: 170px;
+        }
+    }
+    /* Logos de contactos*/
+    .headerFooter__contactLogos{
+        width: 150px;
+        li{
+            a{
+                img{
+                    width: 50px;
+                }
+            }
+        }
+    }
+    /*Index About Me*/
+    .article__aboutMe{
+        section{
+            width: 50vw;
+        }
+    }
+    /* Index Main*/
+    .main__carrousel{
+        img{
+            width: 15vw;
+        }
+        article{
+            nav{
+                width: 60vw;
+            }
+        }
+    }
+    /*About Main*/
+    .main__about{
+        section{
+            width: 50vw;
+        }
+    }
+    /* Works Table */
+    .section__tableFormat{
+        width: 65vw;
+        td{
+            a{
+                img{
+                    width: 15vw;
+                }
+            }
+        }
+    }
+    /*Formulario Contact*/
+    .main__formulario{
+        textarea{
+            width: 60%;
+        }
+    }
+    /* Aca comienza el Grid para la pagina Resume*/
+    .main__personalInfoResume{
+        table{
+            width: 60vw;
+            font-size: 20px;
+        }
+    }
+    .main__skillsResume{
+        grid-template-columns:20vw 20vw;
+        grid-column-gap: 30vw;
+    }
+    /*Fin del Grid Resume*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
