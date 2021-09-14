@@ -49,7 +49,7 @@ header {
   margin-bottom: 45px; }
   header nav {
     display: flex;
-    width: 60vw;
+    width: 66.66666vw;
     justify-content: center; }
     header nav ul {
       display: flex;
@@ -69,22 +69,22 @@ header {
 /*Logo*/
 .headerFooter__logo {
   display: flex;
-  margin-left: 1.5vw; }
+  margin-left: 0px; }
   .headerFooter__logo img {
-    width: 17vw; }
+    width: 16.66666vw; }
 
 /*Contact Logos*/
 .headerFooter__contactLogos {
   display: flex;
   justify-content: space-between;
-  width: 12vw;
-  margin-right: 1.8vw; }
+  width: 16.6666vw;
+  margin-right: 0px; }
   .headerFooter__contactLogos li {
     display: flex; }
     .headerFooter__contactLogos li a {
       display: flex; }
       .headerFooter__contactLogos li a img {
-        width: 4vw; }
+        width: 5.55553vw; }
 
 /*Mi Foto*/
 .section__myPhoto {
@@ -363,7 +363,7 @@ input {
 h1 {
   font-family: "Post No Bills Colombo Bold";
   font-style: normal;
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: underline;
   margin-bottom: 15px; }
 

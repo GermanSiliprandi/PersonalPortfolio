@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Post No Bills Colombo SemiBold" ;
+    src: url(../fonts/postnobillscolombo-semibold.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Post No Bills Colombo Bold" ;
+    src: url(../fonts/postnobillscolombo-bold.ttf) format("truetype");
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url(../images/body_background.jpg);
+    background-repeat:repeat;
+    background-size: contain;
+    font-family: "Post No Bills Colombo SemiBold";
+    color: white;
+    text-align: center;
+}
+.mb-4{
+    margin-bottom: 45px;
+}
+.background-color-07{
+    background-color: rgba(39, 38, 41, 0.7);
+}
+.background-color-09{
+    background-color: rgba(39, 38, 41, 0.9);
+}
+.bold{
+    font-family: "Post No Bills Colombo Bold" ;
+}
+.navbar{
+    font-size: 3.5vw;
+    a{
+        text-decoration: none;
+        font-family: "Post No Bills Colombo Bold";
+        color: white;
+    }
+}
+.headerFooter__height{
+    height: 80px;
+}
+.border{
+    border: solid;
+}
+.img-fluid{
+    width: 100%;
+}
+
+.padding-0{
+    padding:0px;
+}
+.section__myPhoto{
+    margin-bottom: 40px;
+    img{
+        width: 100px;
+    }
+}
+h1{
+    font-family: "Post No Bills Colombo Bold";
+    font-style: normal;
+    font-size: 30px;
+    text-decoration: underline;
+    margin-bottom: 15px;}
+p{
+    font-size: 18px;
+}
+.footer__p{
+    font-size: 4vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+

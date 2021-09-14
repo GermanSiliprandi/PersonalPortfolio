@@ -7,11 +7,11 @@ $background_07: rgba(39, 38, 41, 0.7);
 $background_09: rgba(39, 38, 41, 0.9);
 $text_color:white;
 $s_between: space-between;
-$nav_width_mobile:60vw;
+$nav_width_mobile:66.66666vw;
 $nav_width_desktop:660px;
 $menu_text_size_mobile:3.5vw;
-$logo_width_mobile:17vw;
-$contact_logos_width_mobile:12vw;
+$logo_width_mobile:16.66666vw;
+$contact_logos_width_mobile:16.6666vw;
 $contact_logo_width_mobile:$contact_logos_width_mobile/3;
 $text_block_width_mobile:90vw;
 $table_block_width_mobile:90vw;
@@ -103,7 +103,7 @@ header{
 /*Logo*/
 .headerFooter__logo{
     display: flex;
-    margin-left: 1.5vw;
+    margin-left: 0px;
     img{
         width: $logo_width_mobile;
     }
@@ -113,7 +113,7 @@ header{
     display: flex;
     justify-content: $s_between;
     width: $contact_logos_width_mobile;
-    margin-right: 1.8vw;
+    margin-right: 0px;
     li{
         display: flex;
         a{
@@ -419,7 +419,7 @@ input{
 h1 {
     font-family: "Post No Bills Colombo Bold";
     font-style: normal;
-    font-size: 40px;
+    font-size: 30px;
     text-decoration: underline;
     margin-bottom: 15px;
 }
@@ -439,7 +439,6 @@ h1 {
     }
     /* logo*/
     .headerFooter__logo{
-        margin-left: 10px;
         img{
             width: 140px;
         }
