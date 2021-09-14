@@ -18,6 +18,14 @@ body {
     color: white;
     text-align: center;
 }
+/*Logo*/
+.headerFooter__logo{
+    width: 100%;
+    }
+/*Contact Logos*/
+.headerFooter__contactLogos{
+    width:100%
+}
 .mb-4{
     margin-bottom: 45px;
 }
@@ -71,6 +79,39 @@ p{
     margin: 0px;
     padding: 0px;
 }
+@media only screen and (min-width:768px){
+    .navbar{
+        font-size: 30px;
+    }
+/*Logo*/
+    .headerFooter__logo{
+        width: 140px;
+        }
+/*Contact Logos*/
+    .headerFooter__contactLogos{
+        width:40px;
+}
+.footer__p{
+    font-size: 20px;
+}
+}
+@media only screen and (min-width:1024px){
+    .navbar{
+        font-size: 35px;
+    }
+/*Logo*/
+    .headerFooter__logo{
+        width: 170px;
+        }
+/*Contact Logos*/
+    .headerFooter__contactLogos{
+        width:50px;
+}
+.footer__p{
+    font-size: 20px;
+}
+}
+
 
 
 

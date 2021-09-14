@@ -9,24 +9,31 @@
     <title>G.S Web Design - Works</title>
 </head>
 <body>
-    <!-- Esta es la página works modo Flexbox-->
-    <header>
-        <a  href="../index.html" class="headerFooter__logo"><img src="../images/logo.png" alt="logo"></a>
-        <nav> 
-            <ul>
-                <li><a href="../index.html">Home </a></li>
-                <li><a href="../pages/works.html">Works </a></li>
-                <li><a href="../pages/about.html">About </a></li>
-                <li><a href="../pages/resume.html">Resume </a></li>
-                <li><a href="../pages/contact.html">Contact </a></li>
-            </ul>
-        </nav>
-        <ul class="headerFooter__contactLogos">
-            <li><a href="https://github.com/GermanSiliprandi"><img src="../images/github.png" alt="github link"></a></li>
-            <li><a href="https://www.linkedin.com/in/german-daniel-siliprandi-2487a082/"><img src="../images/linkedin.png" alt="linkedin link"></a></li>
-            <li><a href="mailto:german.siliprandi@gmail.com"><img src="../images/gmail.png" alt="mail link"></a></li>
-        </ul> 
-    </header>
+    <!--Bootstrap Works-->
+    <div class="container-fluid">
+        <div class=" sticky-top row mb-4 background-color-07 align-items-center justify-content-between headerFooter__height">
+                <div class=" col-2 padding-0">
+                <a href="../index.html"><img class="headerFooter__logo float-start" src="../images/logo.png" alt="logo"></a>
+                </div>
+                <div class="col-8 col-md-7  col-xl-5 justify-content-between padding-0  ">
+                    <div class="navbar padding-0  ">
+                        <a href="../index.html">Home </a>
+                        <a href="../pages/works.html">Works </a>
+                        <a href="../pages/about.html">About </a>
+                        <a href="../pages/resume.html">Resume </a>
+                        <a href="../pages/contact.html">Contact </a>
+                    </div> 
+                    
+                </div>
+                <div class="col-2 padding-0 ">
+                <ul class="list-group list-unstyled list-group-horizontal align-items-center justify-content-end padding-0 ">   
+                    <li><a href="https://github.com/GermanSiliprandi"><img class="headerFooter__contactLogos" src="../images/github.png" alt="github link"></a></li>
+                    <li><a href="https://www.linkedin.com/in/german-daniel-siliprandi-2487a082/"><img  class="headerFooter__contactLogos"src="../images/linkedin.png" alt="linkedin link"></a></li>
+                    <li><a href="mailto:german.siliprandi@gmail.com"><img class="headerFooter__contactLogos" src="../images/gmail.png" alt="mail link"></a></li>
+                </ul> 
+                </div>
+            
+        </div>
     <main class="main__carrousel">
         <article>
             <h1>Most Recent Works</h1>
@@ -70,15 +77,23 @@
             </tr>
         </table>
     </article>
-    <footer>
-        <a  href="../index.html" class="headerFooter__logo"><img src="../images/logo.png" alt="logo"></a>
-        <p>Designed by German Siliprandi</p>
-        <ul class="headerFooter__contactLogos">   
-            <li><a href="https://github.com/GermanSiliprandi"><img src="../images/github.png" alt="github link"></a></li>
-            <li><a href="https://www.linkedin.com/in/german-daniel-siliprandi-2487a082/"><img src="../images/linkedin.png" alt="linkedin link"></a></li>
-            <li><a href="mailto:german.siliprandi@gmail.com"><img src="../images/gmail.png" alt="mail link"></a></li>
+    <div class="row background-color-09 align-items-center justify-content-between headerFooter__height">
+        <div class="col-2  padding-0">
+            <a href="../index.html"><img class="headerFooter__logo" src="../images/logo.png" alt="logo"></a>
+            </div>
+<div class="col-7 padding-0  ">
+    <p class="footer__p ">Designed by German Siliprandi</p>
+</div>
+    <div class="col-2 padding-0">
+        <ul class="list-group list-unstyled list-group-horizontal align-items-center justify-content-end padding-0 ">   
+            <li><a href="https://github.com/GermanSiliprandi"><img class="headerFooter__contactLogos" src="../images/github.png" alt="github link"></a></li>
+            <li><a href="https://www.linkedin.com/in/german-daniel-siliprandi-2487a082/"><img  class="headerFooter__contactLogos"src="../images/linkedin.png" alt="linkedin link"></a></li>
+            <li><a href="mailto:german.siliprandi@gmail.com"><img class="headerFooter__contactLogos" src="../images/gmail.png" alt="mail link"></a></li>
         </ul> 
-    </footer>
+        </div>
+</div>
+</div>
+    </div>
     <script src="../js/bootstrap.bundle.min.js"> </script>
 </body>
 </html>

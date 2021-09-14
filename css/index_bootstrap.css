@@ -88,3 +88,15 @@ p {
     width: 40px; }
   .footer__p {
     font-size: 20px; } }
+
+@media only screen and (min-width: 1024px) {
+  .navbar {
+    font-size: 35px; }
+  /*Logo*/
+  .headerFooter__logo {
+    width: 170px; }
+  /*Contact Logos*/
+  .headerFooter__contactLogos {
+    width: 50px; }
+  .footer__p {
+    font-size: 20px; } }
