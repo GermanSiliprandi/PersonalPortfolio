@@ -22,12 +22,28 @@ body {
 .headerFooter__logo {
   width: 100%; }
 
+.headerFooter__logo:hover {
+  transform: translate(30px) scale(2, 2); }
+
 /*Contact Logos*/
 .headerFooter__contactLogos {
   width: 100%; }
 
+.headerFooter__contactLogosList:hover {
+  transform: translate(-35px) scale(2, 2); }
+
+/*My Photo*/
+.section__myPhoto {
+  margin-bottom: 40px; }
+  .section__myPhoto img {
+    width: 100px; }
+  .section__myPhoto img:hover {
+    animation: flip;
+    animation-duration: 2s; }
+
+/*Bootstrap Modifications and new classes*/
 .mb-4 {
-  margin-bottom: 45px; }
+  margin-bottom: 40px !important; }
 
 .background-color-07 {
   background-color: rgba(39, 38, 41, 0.7); }
@@ -57,11 +73,6 @@ body {
 .padding-0 {
   padding: 0px; }
 
-.section__myPhoto {
-  margin-bottom: 40px; }
-  .section__myPhoto img {
-    width: 100px; }
-
 h1 {
   font-family: "Post No Bills Colombo Bold";
   font-style: normal;
@@ -73,7 +84,7 @@ p {
   font-size: 18px; }
 
 .footer__p {
-  font-size: 4vw;
+  font-size: 3vw;
   margin: 0px;
   padding: 0px; }
 
@@ -87,9 +98,13 @@ p {
   .headerFooter__contactLogos {
     width: 40px; }
   .footer__p {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .headerFooter__contactLogosList:hover {
+    transform: none; }
+  .headerFooter__logo:hover {
+    transform: none; } }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .navbar {
     font-size: 35px; }
   /*Logo*/

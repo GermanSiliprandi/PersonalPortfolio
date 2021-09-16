@@ -32,7 +32,7 @@ footer {
   align-items: center; }
   footer p {
     max-width: fit-content;
-    font-size: 4vw; }
+    font-size: 3vw; }
 
 /*header*/
 header {
@@ -72,6 +72,8 @@ header {
   margin-left: 0px; }
   .headerFooter__logo img {
     width: 16.66666vw; }
+  .headerFooter__logo img:hover {
+    transform: translate(30px) scale(2, 2); }
 
 /*Contact Logos*/
 .headerFooter__contactLogos {
@@ -86,6 +88,9 @@ header {
       .headerFooter__contactLogos li a img {
         width: 5.55553vw; }
 
+.headerFooter__contactLogos:hover {
+  transform: translate(-35px) scale(2, 2); }
+
 /*Mi Foto*/
 .section__myPhoto {
   display: flex;
@@ -93,6 +98,9 @@ header {
   margin-bottom: 40px; }
   .section__myPhoto img {
     width: 100px; }
+  .section__myPhoto img:hover {
+    animation: flip;
+    animation-duration: 2s; }
 
 /*Index About Me*/
 .article__aboutMe {
@@ -194,9 +202,7 @@ input {
 /* Aca comienza el Grid para la pagina Resume*/
 #body__fatherGridResume {
   display: grid;
-  grid-template-areas: "headerGrid"
- "mainGrid"
- "footerGrid";
+  grid-template-areas: "headerGrid" "mainGrid" "footerGrid";
   grid-template-rows: 80px auto 80px;
   grid-template-columns: 100%;
   align-content: space-between;
@@ -216,11 +222,7 @@ input {
   .main__resume article {
     display: grid;
     grid-area: articleResumeGrid;
-    grid-template-areas: "myImageGrid"
- "personalInfoGrid"
- "jobExperienceGrid"
- "studiesGrid"
- "skillsGrid";
+    grid-template-areas: "myImageGrid" "personalInfoGrid" "jobExperienceGrid" "studiesGrid" "skillsGrid";
     grid-template-columns: 100%;
     justify-content: center;
     align-content: center;
@@ -237,6 +239,9 @@ input {
   justify-items: center; }
   .main__imageResume img {
     width: 100px; }
+  .main__imageResume img:hover {
+    animation: flip;
+    animation-duration: 2s; }
 
 .main__personalInfoResume {
   display: grid;
@@ -246,8 +251,7 @@ input {
   align-items: center;
   justify-items: center;
   grid-template-columns: auto;
-  grid-template-areas: "h1PersonalInfo"
- "personalInfo"; }
+  grid-template-areas: "h1PersonalInfo" "personalInfo"; }
   .main__personalInfoResume h1 {
     grid-area: h1PersonalInfo; }
   .main__personalInfoResume table {
@@ -269,8 +273,7 @@ input {
   align-content: center;
   align-items: start;
   justify-items: center;
-  grid-template-areas: " h1JobExperienceResume  h1JobExperienceResume h1JobExperienceResume"
- "job1ResumeGrid job2ResumeGrid job3ResumeGrid";
+  grid-template-areas: " h1JobExperienceResume  h1JobExperienceResume h1JobExperienceResume" "job1ResumeGrid job2ResumeGrid job3ResumeGrid";
   grid-template-columns: 30vw 30vw 30vw;
   grid-column-gap: 1.5vw;
   grid-row-gap: 0px; }
@@ -384,20 +387,22 @@ h1 {
 @media only screen and (min-width: 768px) {
   /* Menu Superior*/
   header nav {
-    width: 450px; }
+    width: 58.33333vw; }
   header nav ul li a {
     font-size: 30px; }
   /* logo*/
-  .headerFooter__logo {
-    margin-left: 0px; }
-    .headerFooter__logo img {
-      width: 140px; }
+  .headerFooter__logo img {
+    width: 140px; }
+  .headerFooter__logo img:hover {
+    transform: none; }
   /* Logos de contactos*/
   .headerFooter__contactLogos {
     width: 120px;
     margin-right: 0px; }
     .headerFooter__contactLogos li a img {
       width: 40px; }
+  .headerFooter__contactLogos:hover {
+    transform: none; }
   /*Footer*/
   footer p {
     font-size: 20px; }
@@ -444,10 +449,10 @@ h1 {
       font-size: 30px; }
   /*Fin del Grid Resume*/ }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   /* Menu Superior*/
   header nav {
-    width: 660px; }
+    width: 50vw; }
     header nav ul li a {
       font-size: 35px; }
   .headerFooter__logo img {

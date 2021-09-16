@@ -8,7 +8,7 @@ $background_09: rgba(39, 38, 41, 0.9);
 $text_color:white;
 $s_between: space-between;
 $nav_width_mobile:66.66666vw;
-$nav_width_desktop:660px;
+$nav_width_desktop:50vw;
 $menu_text_size_mobile:3.5vw;
 $logo_width_mobile:16.66666vw;
 $contact_logos_width_mobile:16.6666vw;
@@ -67,7 +67,7 @@ footer{
     @include footerMixin($background_09 ,$header_footer_height ,flex , row, nowrap, $s_between, center);
     p{
         max-width: fit-content;
-        font-size: 4vw;
+        font-size: 3vw;
     }
 }
 /*header*/
@@ -107,6 +107,9 @@ header{
     img{
         width: $logo_width_mobile;
     }
+    img:hover{
+        transform: translate(30px) scale(2,2);
+    }
 }
 /*Contact Logos*/
 .headerFooter__contactLogos{
@@ -124,11 +127,18 @@ header{
         }
     }
 }
+.headerFooter__contactLogos:hover{
+    transform: translate(-35px) scale(2,2);
+}
 /*Mi Foto*/
 .section__myPhoto{
     @include myPhotoMixin(flex, center, $margin_b);
     img{
         width: 100px;
+    }
+    img:hover{
+        animation: flip; 
+        animation-duration: 2s;
     }
 }
 /*Index About Me*/
@@ -279,6 +289,10 @@ input{
     @include imageResumeMixin (grid, myImageGrid, center, center, center, center);
     img{
         width: $my_image_width;
+    }
+    img:hover{
+        animation: flip; 
+        animation-duration: 2s;
     }
 }
 .main__personalInfoResume{
@@ -432,7 +446,7 @@ h1 {
 @media only screen and (min-width:768px){
     /* Menu Superior*/
     header nav {
-        width: 450px;
+        width: 58.33333vw;
     }
     header nav ul li a{
         font-size: 30px;
@@ -442,11 +456,14 @@ h1 {
         img{
             width: 140px;
         }
+        img:hover{
+            transform: none;
+        }
     }
     /* Logos de contactos*/
     .headerFooter__contactLogos{
         width: 120px;
-        margin-right: 15px;
+        margin-right: 0px;
         li{
             a{
                 img{
@@ -454,6 +471,9 @@ h1 {
                 }
             }
         }
+    }
+    .headerFooter__contactLogos:hover{
+        transform: none;
     }
     /*Footer*/
     footer p{
@@ -540,7 +560,7 @@ h1 {
     }
     /*Fin del Grid Resume*/
 }
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1200px){
     /* Menu Superior*/
     header{
         nav{

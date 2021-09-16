@@ -6,6 +6,8 @@
     font-family: "Post No Bills Colombo Bold" ;
     src: url(../fonts/postnobillscolombo-bold.ttf) format("truetype");
 }
+/*Variables*/
+$bold:"Post No Bills Colombo Bold";
 *{
     margin: 0px;
     padding: 0px;
@@ -22,12 +24,44 @@ body {
 .headerFooter__logo{
     width: 100%;
     }
+.headerFooter__logo:hover{
+    transform: translate(30px) scale(2,2);
+}
 /*Contact Logos*/
 .headerFooter__contactLogos{
     width:100%
 }
+.headerFooter__contactLogosList:hover{
+    transform: translate(-35px) scale(2,2);
+}
+/*Tabla Works*/
+.table{
+    font-style: normal;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 90vw;
+    font-size: 13px;
+    color: white;
+    th{
+        font-family: $bold;
+    }
+    a{
+        img{
+            width: 25vw;
+        }
+    }
+}
+/*my photo*/
+.section__myPhoto{
+    margin-bottom: 40px;
+    img{
+        width: 100px;
+    }
+}
+/*bootstrap modifications*/
 .mb-4{
-    margin-bottom: 45px;
+    margin-bottom: 40px !important; 
 }
 .background-color-07{
     background-color: rgba(39, 38, 41, 0.7);
@@ -55,16 +89,6 @@ body {
 .img-fluid{
     width: 100%;
 }
-
-.padding-0{
-    padding:0px;
-}
-.section__myPhoto{
-    margin-bottom: 40px;
-    img{
-        width: 100px;
-    }
-}
 h1{
     font-family: "Post No Bills Colombo Bold";
     font-style: normal;
@@ -75,9 +99,12 @@ p{
     font-size: 18px;
 }
 .footer__p{
-    font-size: 4vw;
+    font-size: 3vw;
     margin: 0px;
     padding: 0px;
+}
+.padding-0{
+    padding:0px;
 }
 @media only screen and (min-width:768px){
     .navbar{
@@ -90,12 +117,30 @@ p{
 /*Contact Logos*/
     .headerFooter__contactLogos{
         width:40px;
-}
-.footer__p{
+    }
+    .footer__p{
     font-size: 20px;
+    }
+    /* Works Table */
+    .table{
+        width: 80vw;
+        font-size: 20px;
+        td{
+            a{
+                img{
+                    width: 20vw;
+                }
+            }
+        }
+    }
+    .headerFooter__contactLogosList:hover{
+        transform: none;
+    }
+    .headerFooter__logo:hover{
+        transform: none;
+    }
 }
-}
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1200px){
     .navbar{
         font-size: 35px;
     }
@@ -106,10 +151,21 @@ p{
 /*Contact Logos*/
     .headerFooter__contactLogos{
         width:50px;
-}
+    }
 .footer__p{
     font-size: 20px;
-}
+    }
+    /* Works Table */
+    .table{
+        width: 65vw;
+        td{
+            a{
+                img{
+                    width: 15vw;
+                }
+            }
+        }
+    }
 }
 
 
