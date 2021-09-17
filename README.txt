@@ -6,7 +6,7 @@ I made the following modifications or analysis:
 
 3) I checked that all titles were correct.
 
-4) I check all headers were correct.
+4) I checked all headers were correct.
 
 5) I made a sitemap.xml file
 
