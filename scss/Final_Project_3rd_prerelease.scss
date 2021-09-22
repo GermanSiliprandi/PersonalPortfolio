@@ -13,10 +13,9 @@ $menu_text_size_mobile:3.5vw;
 $logo_width_mobile:16.66666vw;
 $contact_logos_width_mobile:16.6666vw;
 $contact_logo_width_mobile:$contact_logos_width_mobile/3;
-$text_block_width_mobile:90vw;
-$table_block_width_mobile:90vw;
+$text_block_width_mobile:91.66666666vw;
+$table_block_width_mobile:91.66666666vw;
 $table_border:1px solid;
-$table_image_width_mobile:25vw;
 $my_image_width:100px;
 /*Mixins*/
 @mixin footerMixin ($background, $height, $display, $flex-direction, $flex-wrap, $justify-content, $align-items){
@@ -106,9 +105,9 @@ header{
     margin-left: 0px;
     img{
         width: $logo_width_mobile;
-    }
-    img:hover{
-        transform: translate(30px) scale(2,2);
+        &:hover{
+            transform: translate(30px) scale(2,2);
+        }
     }
 }
 /*Contact Logos*/
@@ -141,47 +140,6 @@ header{
         animation-duration: 2s;
     }
 }
-/*Index About Me*/
-.article__aboutMe{
-    @include myPhotoMixin(flex, center, $margin_b);
-    section{
-        background: $background_07;
-        display:flex;
-        flex-direction: column;
-        width: 90vw;
-        font-size: 18px;
-    }
-    p{
-        margin: 10px;
-    }
-}
-/*Index Main*/
-.main__carrousel{
-    @include myPhotoMixin(flex, center, $margin_b);
-    article{
-        display: flex;
-        flex-direction: column;
-        nav{
-            display: flex;
-            width: 95vw;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-    }
-    img{
-        width: 25vw;
-    }
-}
-.main__lButton{
-    background-image: url(../images/left_buttton.png);
-    background-size: 4vw 18vw;
-    background-position-x: -3px;
-    height: 18vw;  
-    width: 4vw;
-}
-.main__lButton--right{
-    background-image: url(../images/right_button.png);
-}
 /*About Main*/
 .main__about{
     @include myPhotoMixin(flex, center, $margin_b);
@@ -200,28 +158,6 @@ header{
     }
     p{
         margin: 10px;
-    }
-}
-/*Tabla Works*/
-.section__tableFormat{
-    font-style: normal;
-    border: $table_border;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: $margin_b;
-    width: $table_block_width_mobile;
-    font-size: 13px;
-    th{
-        font-family: $bold;
-        border: $table_border;
-    }
-    td{
-        border: $table_border;
-    }
-    a{
-        img{
-            width: $table_image_width_mobile;
-        }
     }
 }
 /*Formulario Contact*/
@@ -455,9 +391,9 @@ h1 {
     .headerFooter__logo{
         img{
             width: 140px;
-        }
-        img:hover{
-            transform: none;
+            &:hover{
+                transform: none;
+            }
         }
     }
     /* Logos de contactos*/

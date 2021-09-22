@@ -21,9 +21,8 @@ body {
 /*Logo*/
 .headerFooter__logo {
   width: 100%; }
-
-.headerFooter__logo:hover {
-  transform: translate(30px) scale(2, 2); }
+  .headerFooter__logo:hover {
+    transform: translate(30px) scale(2, 2); }
 
 /*Contact Logos*/
 .headerFooter__contactLogos {
@@ -94,14 +93,14 @@ p {
   /*Logo*/
   .headerFooter__logo {
     width: 140px; }
+    .headerFooter__logo:hover {
+      transform: none; }
   /*Contact Logos*/
   .headerFooter__contactLogos {
     width: 40px; }
   .footer__p {
     font-size: 20px; }
   .headerFooter__contactLogosList:hover {
-    transform: none; }
-  .headerFooter__logo:hover {
     transform: none; } }
 
 @media only screen and (min-width: 1200px) {
