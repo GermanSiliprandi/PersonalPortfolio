@@ -112,14 +112,14 @@ header {
     flex-direction: column;
     width: 91.66667vw; }
   .main__about div {
-    background: rgba(39, 38, 41, 0.7);
+    background-image: radial-gradient(rgba(39, 38, 41, 0.8) 20%, rgba(39, 38, 41, 0.7) 40%, rgba(39, 38, 41, 0.5) 60%, rgba(39, 38, 41, 0.3) 80%);
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 18px; }
+    font-size: 3vw; }
   .main__about p {
-    margin: 10px; }
+    margin: 7.5px 10px 7.5px 10px; }
 
 /*Formulario Contact*/
 .main__formulario {
@@ -170,8 +170,6 @@ input {
     justify-content: center;
     align-content: center;
     grid-row-gap: 40px; }
-    .main__resume article h2 {
-      text-decoration: underline; }
 
 .main__imageResume {
   display: grid;
@@ -181,7 +179,8 @@ input {
   align-items: center;
   justify-items: center; }
   .main__imageResume img {
-    width: 100px; }
+    width: 100px;
+    margin-bottom: 40px; }
   .main__imageResume img:hover {
     animation: flip;
     animation-duration: 2s; }
@@ -224,12 +223,10 @@ input {
     grid-area: h1JobExperienceResume; }
   .main__jobExperienceResume li {
     list-style: none; }
-    .main__jobExperienceResume li h2 {
-      font-size: 4vw; }
     .main__jobExperienceResume li li {
       list-style: url(../images/star.png);
       list-style-position: inside;
-      font-size: 3vw;
+      font-size: 2.5vw;
       width: 95%;
       margin-bottom: 10px; }
 
@@ -238,7 +235,7 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background: rgba(39, 38, 41, 0.9); }
+  background-image: radial-gradient(rgba(39, 38, 41, 0.8) 20%, rgba(39, 38, 41, 0.7) 40%, rgba(39, 38, 41, 0.5) 60%, rgba(39, 38, 41, 0.3) 80%); }
 
 .main__jobResume--job1 {
   grid-area: job1ResumeGrid; }
@@ -266,6 +263,7 @@ input {
   grid-template-columns: 40vw 40vw;
   align-content: center;
   justify-content: center;
+  align-items: center;
   grid-column-gap: 15vw;
   grid-row-gap: 0px; }
   .main__studiesResume li {
@@ -275,9 +273,6 @@ input {
     width: 95%; }
   .main__studiesResume h1 {
     grid-area: h1StudiesGrid; }
-  .main__studiesResume ul li h2 {
-    text-decoration: none;
-    font-size: 4vw; }
 
 .main__studyResume--study1 {
   grid-area: study1Grid; }
@@ -299,12 +294,12 @@ input {
     list-style-position: inside;
     margin-bottom: 5px;
     margin-top: 5px;
-    font-size: 4vw; }
+    font-size: 3.3vw; }
   .main__skillsResume h1 {
     grid-area: h1SkillsGrid; }
 
 .main__skillResume {
-  background: rgba(39, 38, 41, 0.9); }
+  background: radial-gradient(rgba(39, 38, 41, 0.8) 20%, rgba(39, 38, 41, 0.7) 40%, rgba(39, 38, 41, 0.5) 60%, rgba(39, 38, 41, 0.3) 80%); }
 
 .main__skillResume--skill1 {
   grid-area: skills1Grid; }
@@ -317,9 +312,14 @@ input {
 h1 {
   font-family: "Post No Bills Colombo Bold";
   font-style: normal;
-  font-size: 30px;
+  font-size: 4vw;
   text-decoration: underline;
   margin-bottom: 15px; }
+
+h2 {
+  font-size: 3vw;
+  margin-bottom: 10px;
+  text-decoration: underline; }
 
 .text20 {
   font-size: 20px; }
@@ -349,25 +349,11 @@ h1 {
   /*Footer*/
   footer p {
     font-size: 20px; }
-  /*Index About Me*/
-  .article__aboutMe section {
-    width: 75vw; }
-  .article__aboutMe p {
-    margin: 10px; }
-  /* Index Main*/
-  .main__carrousel article nav {
-    width: 75vw; }
-  .main__carrousel img {
-    width: 20vw; }
   /*About Main*/
   .main__about section {
     width: 75vw; }
-  /* Works Table */
-  .section__tableFormat {
-    width: 80vw;
-    font-size: 20px; }
-    .section__tableFormat td a img {
-      width: 20vw; }
+  .main__about div {
+    font-size: 18px; }
   /*Formulario Contact*/
   .main__formulario textarea {
     width: 75%; }
@@ -377,20 +363,21 @@ h1 {
   .main__jobExperienceResume {
     grid-template-columns: 25vw 25vw 25vw;
     grid-column-gap: 7vw; }
-    .main__jobExperienceResume li h2 {
-      font-size: 30px; }
     .main__jobExperienceResume li li {
       font-size: 20px; }
   .main__studiesResume {
     grid-template-columns: 30vw 30vw;
     grid-column-gap: 20vw; }
-    .main__studiesResume ul li h2 {
-      font-size: 30px; }
   .main__skillResume {
     grid-column-gap: 20vw; }
     .main__skillResume li {
-      font-size: 30px; }
-  /*Fin del Grid Resume*/ }
+      font-size: 25px; }
+  /*Fin del Grid Resume*/
+  /*Formato Generico*/
+  h1 {
+    font-size: 30px; }
+  h2 {
+    font-size: 25px; } }
 
 @media only screen and (min-width: 1200px) {
   /* Menu Superior*/
@@ -405,22 +392,9 @@ h1 {
     width: 150px; }
     .headerFooter__contactLogos li a img {
       width: 50px; }
-  /*Index About Me*/
-  .article__aboutMe section {
-    width: 50vw; }
-  /* Index Main*/
-  .main__carrousel img {
-    width: 15vw; }
-  .main__carrousel article nav {
-    width: 60vw; }
   /*About Main*/
   .main__about section {
     width: 50vw; }
-  /* Works Table */
-  .section__tableFormat {
-    width: 65vw; }
-    .section__tableFormat td a img {
-      width: 15vw; }
   /*Formulario Contact*/
   .main__formulario textarea {
     width: 60%; }

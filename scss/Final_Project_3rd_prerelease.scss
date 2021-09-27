@@ -5,6 +5,7 @@ $header_footer_height:80px;
 $margin_b:40px;
 $background_07: rgba(39, 38, 41, 0.7);
 $background_09: rgba(39, 38, 41, 0.9);
+$radial_gradient:radial-gradient(rgba(39, 38, 41, 0.8) 20% ,rgba(39, 38, 41, 0.7) 40%,rgba(39, 38, 41, 0.5) 60%, rgba(39, 38, 41, 0.3) 80%);
 $text_color:white;
 $s_between: space-between;
 $nav_width_mobile:66.66666vw;
@@ -149,15 +150,15 @@ header{
         width: $text_block_width_mobile;
     }
     div{
-        background: $background_07;
+        background-image: $radial_gradient;
         height:fit-content;
         display:flex;
         flex-direction: column;
         justify-content: center;
-        font-size: 18px;
+        font-size: 3vw;
     }
     p{
-        margin: 10px;
+        margin: 7.5px 10px 7.5px 10px;
     }
 }
 /*Formulario Contact*/
@@ -216,15 +217,13 @@ input{
         justify-content: center;
         align-content: center;
         grid-row-gap: $margin_b;
-        h2{
-            text-decoration: underline;
-        }
     }
 }
 .main__imageResume{
     @include imageResumeMixin (grid, myImageGrid, center, center, center, center);
     img{
         width: $my_image_width;
+        margin-bottom: 40px;
     }
     img:hover{
         animation: flip; 
@@ -265,13 +264,10 @@ input{
     }
     li{
         list-style: none;
-        h2{
-            font-size: 4vw;
-        }
         li{
             list-style: url(../images/star.png);
             list-style-position: inside;
-            font-size: 3vw;
+            font-size: 2.5vw;
             width: 95%;
             margin-bottom: 10px;
         }
@@ -282,7 +278,8 @@ input{
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background: $background_09;
+    background-image: $radial_gradient;
+
 }
 @for $job from 1 through 3{
 .main__jobResume--job#{$job}{
@@ -308,6 +305,7 @@ input{
     grid-template-columns: 40vw 40vw;
     align-content: center;
     justify-content: center;
+    align-items: center;
     grid-column-gap: 15vw;
     grid-row-gap: 0px;
     li{
@@ -318,14 +316,6 @@ input{
     }
     h1{
         grid-area: h1StudiesGrid;
-    }
-    ul{
-        li{
-            h2{
-                text-decoration: none;
-                font-size: 4vw;
-            }
-        }
     }
 }
 .main__studyResume{
@@ -350,14 +340,14 @@ input{
         list-style-position: inside;
         margin-bottom: 5px;
         margin-top: 5px;
-        font-size: 4vw;
+        font-size: 3.3vw;
     }
     h1{
         grid-area: h1SkillsGrid;
     }
 }
 .main__skillResume{
-    background: $background_09;
+    background: $radial_gradient;
 }
 @for $skill from 1 to 3{
 .main__skillResume--skill#{$skill}{
@@ -369,9 +359,14 @@ input{
 h1 {
     font-family: "Post No Bills Colombo Bold";
     font-style: normal;
-    font-size: 30px;
+    font-size: 4vw;
     text-decoration: underline;
     margin-bottom: 15px;
+}
+h2{
+    font-size: 3vw;
+    margin-bottom: 10px;
+    text-decoration: underline;
 }
 .text20{
     font-size: 20px;
@@ -415,42 +410,13 @@ h1 {
     footer p{
         font-size: 20px;
     }
-    /*Index About Me*/
-    .article__aboutMe{ 
-        section{
-            width: 75vw;
-        }
-        p{
-            margin: 10px;
-        }
-    }
-    /* Index Main*/
-    .main__carrousel{
-        article{
-            nav{
-                width: 75vw;
-            }
-        }
-        img{
-            width: 20vw;
-        }
-    }
     /*About Main*/
     .main__about{
         section{
             width: 75vw;
         }
-    }
-    /* Works Table */
-    .section__tableFormat{
-        width: 80vw;
-        font-size: 20px;
-        td{
-            a{
-                img{
-                    width: 20vw;
-                }
-            }
+        div{
+            font-size: 18px;
         }
     }
     /*Formulario Contact*/
@@ -469,9 +435,6 @@ h1 {
         grid-template-columns: 25vw 25vw 25vw;
         grid-column-gap: 7vw;
         li{
-            h2{
-                font-size: 30px;
-            }
             li{
                 font-size: 20px;
             }
@@ -480,21 +443,21 @@ h1 {
     .main__studiesResume{
         grid-template-columns:30vw 30vw;
         grid-column-gap: 20vw;
-        ul{
-            li{
-                h2{
-                    font-size: 30px;
-                }
-            }
-        }
     }
     .main__skillResume{
         grid-column-gap: 20vw;
         li{
-            font-size: 30px;
+            font-size: 25px;
         }
     }
     /*Fin del Grid Resume*/
+    /*Formato Generico*/
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 25px;
+    }
 }
 @media only screen and (min-width:1200px){
     /* Menu Superior*/
@@ -526,38 +489,10 @@ h1 {
             }
         }
     }
-    /*Index About Me*/
-    .article__aboutMe{
-        section{
-            width: 50vw;
-        }
-    }
-    /* Index Main*/
-    .main__carrousel{
-        img{
-            width: 15vw;
-        }
-        article{
-            nav{
-                width: 60vw;
-            }
-        }
-    }
     /*About Main*/
     .main__about{
         section{
             width: 50vw;
-        }
-    }
-    /* Works Table */
-    .section__tableFormat{
-        width: 65vw;
-        td{
-            a{
-                img{
-                    width: 15vw;
-                }
-            }
         }
     }
     /*Formulario Contact*/

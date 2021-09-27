@@ -39,7 +39,7 @@ body {
   margin-right: auto;
   margin-bottom: 40px;
   width: 90vw;
-  font-size: 13px;
+  font-size: 3vw;
   color: white; }
   .table th {
     font-family: "Post No Bills Colombo Bold"; }
@@ -84,12 +84,9 @@ body {
 h1 {
   font-family: "Post No Bills Colombo Bold";
   font-style: normal;
-  font-size: 30px;
+  font-size: 4vw;
   text-decoration: underline;
   margin-bottom: 15px; }
-
-p {
-  font-size: 18px; }
 
 .footer__p {
   font-size: 3vw;
@@ -113,13 +110,16 @@ p {
   /* Works Table */
   .table {
     width: 80vw;
-    font-size: 20px; }
+    font-size: 18px; }
     .table td a img {
       width: 20vw; }
   .headerFooter__contactLogosList:hover {
     transform: none; }
   .headerFooter__logo:hover {
-    transform: none; } }
+    transform: none; }
+  /*Generic Format*/
+  h1 {
+    font-size: 30px; } }
 
 @media only screen and (min-width: 1200px) {
   .navbar {

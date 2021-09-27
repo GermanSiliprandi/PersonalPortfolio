@@ -41,6 +41,12 @@ body {
     animation-duration: 2s; }
 
 /*Bootstrap Modifications and new classes*/
+.mt-1 {
+  margin-top: 10px !important; }
+
+.mb-1 {
+  margin-bottom: 10px !important; }
+
 .mb-4 {
   margin-bottom: 40px !important; }
 
@@ -49,6 +55,9 @@ body {
 
 .background-color-09 {
   background-color: rgba(39, 38, 41, 0.9); }
+
+.radial-gradient {
+  background-image: radial-gradient(rgba(39, 38, 41, 0.8) 20%, rgba(39, 38, 41, 0.7) 40%, rgba(39, 38, 41, 0.5) 60%, rgba(39, 38, 41, 0.3) 80%); }
 
 .bold {
   font-family: "Post No Bills Colombo Bold"; }
@@ -75,12 +84,12 @@ body {
 h1 {
   font-family: "Post No Bills Colombo Bold";
   font-style: normal;
-  font-size: 30px;
+  font-size: 4vw;
   text-decoration: underline;
   margin-bottom: 15px; }
 
 p {
-  font-size: 18px; }
+  font-size: 3vw; }
 
 .footer__p {
   font-size: 3vw;
@@ -98,6 +107,12 @@ p {
   /*Contact Logos*/
   .headerFooter__contactLogos {
     width: 40px; }
+  /*Generic Format*/
+  h1 {
+    font-size: 30px; }
+  p {
+    font-size: 18px; }
+  /*Footer*/
   .footer__p {
     font-size: 20px; }
   .headerFooter__contactLogosList:hover {

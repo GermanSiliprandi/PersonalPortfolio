@@ -41,7 +41,7 @@ body {
     margin-right: auto;
     margin-bottom: 40px;
     width: 90vw;
-    font-size: 13px;
+    font-size: 3vw;
     color: white;
     th{
         font-family: $bold;
@@ -92,12 +92,9 @@ body {
 h1{
     font-family: "Post No Bills Colombo Bold";
     font-style: normal;
-    font-size: 30px;
+    font-size: 4vw;
     text-decoration: underline;
     margin-bottom: 15px;}
-p{
-    font-size: 18px;
-}
 .footer__p{
     font-size: 3vw;
     margin: 0px;
@@ -124,7 +121,7 @@ p{
     /* Works Table */
     .table{
         width: 80vw;
-        font-size: 20px;
+        font-size: 18px;
         td{
             a{
                 img{
@@ -138,6 +135,10 @@ p{
     }
     .headerFooter__logo:hover{
         transform: none;
+    }
+    /*Generic Format*/
+    h1{
+        font-size: 30px;
     }
 }
 @media only screen and (min-width:1200px){
