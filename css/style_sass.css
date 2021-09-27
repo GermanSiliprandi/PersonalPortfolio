@@ -110,7 +110,7 @@ header {
   .main__about section {
     display: flex;
     flex-direction: column;
-    width: 91.66667vw; }
+    width: 89vw; }
   .main__about div {
     background-image: radial-gradient(rgba(39, 38, 41, 0.8) 20%, rgba(39, 38, 41, 0.7) 40%, rgba(39, 38, 41, 0.5) 60%, rgba(39, 38, 41, 0.3) 80%);
     height: fit-content;
@@ -125,7 +125,7 @@ header {
 .main__formulario {
   display: flex;
   flex-direction: column;
-  width: 91.66667vw;
+  width: 89vw;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
@@ -198,7 +198,7 @@ input {
     grid-area: h1PersonalInfo; }
   .main__personalInfoResume table {
     grid-area: personalInfo;
-    width: 91.66667vw;
+    width: 89vw;
     font-style: normal;
     border: 1px solid;
     font-size: 3vw; }
