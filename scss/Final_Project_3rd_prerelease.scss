@@ -173,15 +173,19 @@ header{
     margin-bottom: $margin_b;
     textarea{
         width: 90%;
-        font-size: 15px;
+        font-size: 3vw;
     }
+    select{
+        width: 10vw;
+        font-size: 3vw;
+        }
 }
 form label{
     font-family: $bold;
 }
 input{
     font-family: $semi_bold;
-    font-size: 20px;
+    font-size: 3vw;
 }
 /* Aca comienza el Grid para la pagina Resume*/
 #body__fatherGridResume{
@@ -369,7 +373,7 @@ h2{
     text-decoration: underline;
 }
 .text20{
-    font-size: 20px;
+    font-size: 3vw;
 }
 .noDecoration{
     text-decoration: none;
@@ -423,7 +427,15 @@ h2{
     .main__formulario{
         textarea{
             width: 75%;
+            font-size: 20px;
         }
+        select{
+            width: 60px;
+            font-size: 20px;
+        }
+    }
+    input{
+        font-size: 20px;
     }
     /* Aca comienza el Grid para la pagina Resume*/
     .main__personalInfoResume{
@@ -457,6 +469,9 @@ h2{
     }
     h2{
         font-size: 25px;
+    }
+    .text20{
+        font-size: 20px;
     }
 }
 @media only screen and (min-width:1200px){

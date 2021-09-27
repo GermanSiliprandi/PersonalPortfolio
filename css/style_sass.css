@@ -133,14 +133,17 @@ header {
   margin-bottom: 40px; }
   .main__formulario textarea {
     width: 90%;
-    font-size: 15px; }
+    font-size: 3vw; }
+  .main__formulario select {
+    width: 10vw;
+    font-size: 3vw; }
 
 form label {
   font-family: "Post No Bills Colombo Bold"; }
 
 input {
   font-family: "Post No Bills Colombo SemiBold";
-  font-size: 20px; }
+  font-size: 3vw; }
 
 /* Aca comienza el Grid para la pagina Resume*/
 #body__fatherGridResume {
@@ -322,7 +325,7 @@ h2 {
   text-decoration: underline; }
 
 .text20 {
-  font-size: 20px; }
+  font-size: 3vw; }
 
 .noDecoration {
   text-decoration: none; }
@@ -356,7 +359,13 @@ h2 {
     font-size: 18px; }
   /*Formulario Contact*/
   .main__formulario textarea {
-    width: 75%; }
+    width: 75%;
+    font-size: 20px; }
+  .main__formulario select {
+    width: 60px;
+    font-size: 20px; }
+  input {
+    font-size: 20px; }
   /* Aca comienza el Grid para la pagina Resume*/
   .main__personalInfoResume table {
     width: 75vw; }
@@ -377,7 +386,9 @@ h2 {
   h1 {
     font-size: 30px; }
   h2 {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .text20 {
+    font-size: 20px; } }
 
 @media only screen and (min-width: 1200px) {
   /* Menu Superior*/
