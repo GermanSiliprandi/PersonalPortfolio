@@ -20,16 +20,11 @@ body {
 
 /*Logo*/
 .headerFooter__logo {
-  width: 100%; }
-  .headerFooter__logo:hover {
-    transform: translate(30px) scale(2, 2); }
+  width: 25vw; }
 
 /*Contact Logos*/
 .headerFooter__contactLogos {
-  width: 100%; }
-
-.headerFooter__contactLogosList:hover {
-  transform: translate(-35px) scale(2, 2); }
+  width: 9vw; }
 
 /*My Photo*/
 .section__myPhoto {
@@ -102,8 +97,6 @@ p {
   /*Logo*/
   .headerFooter__logo {
     width: 140px; }
-    .headerFooter__logo:hover {
-      transform: none; }
   /*Contact Logos*/
   .headerFooter__contactLogos {
     width: 40px; }
@@ -114,9 +107,7 @@ p {
     font-size: 18px; }
   /*Footer*/
   .footer__p {
-    font-size: 20px; }
-  .headerFooter__contactLogosList:hover {
-    transform: none; } }
+    font-size: 20px; } }
 
 @media only screen and (min-width: 1200px) {
   .navbar {
@@ -129,3 +120,6 @@ p {
     width: 50px; }
   .footer__p {
     font-size: 20px; } }
+
+p {
+  font-size: 20px; }

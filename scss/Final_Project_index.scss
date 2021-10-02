@@ -20,17 +20,11 @@ body {
 }
 /*Logo*/
 .headerFooter__logo{
-    width: 100%;
-    &:hover{
-        transform: translate(30px) scale(2,2);
-    }
+    width: 25vw;
     }
 /*Contact Logos*/
 .headerFooter__contactLogos{
-    width:100%
-}
-.headerFooter__contactLogosList:hover{
-    transform: translate(-35px) scale(2,2);
+    width:9vw;
 }
 /*My Photo*/
 .section__myPhoto{
@@ -44,6 +38,7 @@ body {
     }
 }
 /*Bootstrap Modifications and new classes*/
+
 .mt-1{
     margin-top:10px !important;
 }
@@ -107,9 +102,6 @@ p{
 /*Logo*/
     .headerFooter__logo{
         width: 140px;
-        &:hover{
-            transform: none;
-            }
     }
 /*Contact Logos*/
     .headerFooter__contactLogos{
@@ -125,9 +117,6 @@ p{
     /*Footer*/
 .footer__p{
     font-size: 20px;
-    }
-    .headerFooter__contactLogosList:hover{
-        transform: none;
     }
 }
 @media only screen and (min-width:1200px){
@@ -145,4 +134,7 @@ p{
 .footer__p{
     font-size: 20px;
     }
+}
+p{
+    font-size: 20px;
 }
