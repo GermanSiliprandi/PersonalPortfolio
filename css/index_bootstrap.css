@@ -42,10 +42,17 @@ body {
 
 /*Bootstrap Modifications and new classes*/
 .mt-1 {
+<<<<<<< HEAD
   margin-top: 10px !important; }
 
 .mb-1 {
   margin-bottom: 10px !important; }
+=======
+  margin-top: 15px !important; }
+
+.mb-1 {
+  margin-bottom: 15px !important; }
+>>>>>>> 17d107c (Final Project v1.4)
 
 .mb-4 {
   margin-bottom: 40px !important; }
@@ -96,6 +103,20 @@ p {
   margin: 0px;
   padding: 0px; }
 
+/*Contact Form*/
+form label {
+  font-size: 3vw !important;
+  font-family: "Post No Bills Colombo Bold"; }
+
+form select {
+  font-size: 3vw !important; }
+
+form input {
+  font-size: 3vw !important; }
+
+form textarea {
+  font-size: 3vw !important; }
+
 @media only screen and (min-width: 768px) {
   .navbar {
     font-size: 30px; }
@@ -115,8 +136,20 @@ p {
   /*Footer*/
   .footer__p {
     font-size: 20px; }
+<<<<<<< HEAD
   .headerFooter__contactLogosList:hover {
     transform: none; } }
+=======
+  /*Contact Form*/
+  form label {
+    font-size: 20px !important; }
+  form select {
+    font-size: 20px !important; }
+  form input {
+    font-size: 20px !important; }
+  form textarea {
+    font-size: 20px !important; } }
+>>>>>>> 17d107c (Final Project v1.4)
 
 @media only screen and (min-width: 1200px) {
   .navbar {
@@ -128,4 +161,19 @@ p {
   .headerFooter__contactLogos {
     width: 50px; }
   .footer__p {
+<<<<<<< HEAD
     font-size: 20px; } }
+=======
+    font-size: 23px; }
+  p {
+    font-size: 23px; }
+  /*Contact Form*/
+  form label {
+    font-size: 23px !important; }
+  form select {
+    font-size: 23px !important; }
+  form input {
+    font-size: 23px !important; }
+  form textarea {
+    font-size: 23px !important; } }
+>>>>>>> 17d107c (Final Project v1.4)
