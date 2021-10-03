@@ -21,16 +21,11 @@ body {
 
 /*Logo*/
 .headerFooter__logo {
-  width: 100%; }
-  .headerFooter__logo:hover {
-    transform: translate(30px) scale(2, 2); }
+  width: 25vw; }
 
 /*Contact Logos*/
 .headerFooter__contactLogos {
-  width: 100%; }
-
-.headerFooter__contactLogosList:hover {
-  transform: translate(-35px) scale(2, 2); }
+  width: 9vw; }
 
 /*Tabla Works*/
 .table {
@@ -113,10 +108,6 @@ h1 {
     font-size: 18px; }
     .table td a img {
       width: 20vw; }
-  .headerFooter__contactLogosList:hover {
-    transform: none; }
-  .headerFooter__logo:hover {
-    transform: none; }
   /*Generic Format*/
   h1 {
     font-size: 30px; } }

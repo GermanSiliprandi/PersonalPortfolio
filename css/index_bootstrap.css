@@ -20,16 +20,11 @@ body {
 
 /*Logo*/
 .headerFooter__logo {
-  width: 100%; }
-  .headerFooter__logo:hover {
-    transform: translate(30px) scale(2, 2); }
+  width: 25vw; }
 
 /*Contact Logos*/
 .headerFooter__contactLogos {
-  width: 100%; }
-
-.headerFooter__contactLogosList:hover {
-  transform: translate(-35px) scale(2, 2); }
+  width: 9vw; }
 
 /*My Photo*/
 .section__myPhoto {
@@ -42,10 +37,10 @@ body {
 
 /*Bootstrap Modifications and new classes*/
 .mt-1 {
-  margin-top: 10px !important; }
+  margin-top: 15px !important; }
 
 .mb-1 {
-  margin-bottom: 10px !important; }
+  margin-bottom: 15px !important; }
 
 .mb-4 {
   margin-bottom: 40px !important; }
@@ -96,14 +91,26 @@ p {
   margin: 0px;
   padding: 0px; }
 
+/*Contact Form*/
+form label {
+  font-size: 3vw !important;
+  font-family: "Post No Bills Colombo Bold"; }
+
+form select {
+  font-size: 3vw !important; }
+
+form input {
+  font-size: 3vw !important; }
+
+form textarea {
+  font-size: 3vw !important; }
+
 @media only screen and (min-width: 768px) {
   .navbar {
     font-size: 30px; }
   /*Logo*/
   .headerFooter__logo {
     width: 140px; }
-    .headerFooter__logo:hover {
-      transform: none; }
   /*Contact Logos*/
   .headerFooter__contactLogos {
     width: 40px; }
@@ -115,8 +122,15 @@ p {
   /*Footer*/
   .footer__p {
     font-size: 20px; }
-  .headerFooter__contactLogosList:hover {
-    transform: none; } }
+  /*Contact Form*/
+  form label {
+    font-size: 20px !important; }
+  form select {
+    font-size: 20px !important; }
+  form input {
+    font-size: 20px !important; }
+  form textarea {
+    font-size: 20px !important; } }
 
 @media only screen and (min-width: 1200px) {
   .navbar {
@@ -128,4 +142,15 @@ p {
   .headerFooter__contactLogos {
     width: 50px; }
   .footer__p {
-    font-size: 20px; } }
+    font-size: 23px; }
+  p {
+    font-size: 23px; }
+  /*Contact Form*/
+  form label {
+    font-size: 23px !important; }
+  form select {
+    font-size: 23px !important; }
+  form input {
+    font-size: 23px !important; }
+  form textarea {
+    font-size: 23px !important; } }
