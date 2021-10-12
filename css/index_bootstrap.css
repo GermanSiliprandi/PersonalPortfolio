@@ -1,3 +1,5 @@
+/*Variables*/
+/*CSS*/
 @font-face {
   font-family: "Post No Bills Colombo SemiBold";
   src: url(../fonts/postnobillscolombo-semibold.ttf) format("truetype"); }
@@ -83,6 +85,13 @@ h1 {
   text-decoration: underline;
   margin-bottom: 15px; }
 
+h2 {
+  font-family: "Post No Bills Colombo Bold";
+  font-style: normal;
+  font-size: 3vw;
+  text-decoration: underline;
+  margin-bottom: 12px; }
+
 p {
   font-size: 3vw; }
 
@@ -90,6 +99,38 @@ p {
   font-size: 3vw;
   margin: 0px;
   padding: 0px; }
+
+/*Resume */
+.table {
+  font-style: normal;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  font-size: 3vw;
+  color: white; }
+  .table th {
+    font-family: "Post No Bills Colombo Bold"; }
+
+.studies, .jobExperience, .skills {
+  padding: 10px 10px 0px 10px; }
+
+.jobExperience li {
+  margin: 0px !important; }
+  .jobExperience li li {
+    list-style: url(../images/star.png);
+    font-size: 2.5vw;
+    margin-bottom: 10px !important;
+    list-style-position: inside; }
+
+.skills li {
+  list-style: url(../images/star.png);
+  font-size: 3vw;
+  margin-bottom: 10px !important;
+  list-style-position: inside;
+  font-family: "Post No Bills Colombo Bold"; }
+
+.resume__rowHeight {
+  height: fit-content !important; }
 
 /*Contact Form*/
 form label {
@@ -117,11 +158,22 @@ form textarea {
   /*Generic Format*/
   h1 {
     font-size: 30px; }
+  h2 {
+    font-size: 25px; }
   p {
     font-size: 18px; }
   /*Footer*/
   .footer__p {
     font-size: 20px; }
+  /*Resume */
+  .table {
+    font-size: 25px; }
+  .jobExperience li li {
+    font-size: 20px;
+    margin-bottom: 15px; }
+  .skills li {
+    font-size: 25px;
+    margin-bottom: 15px; }
   /*Contact Form*/
   form label {
     font-size: 20px !important; }

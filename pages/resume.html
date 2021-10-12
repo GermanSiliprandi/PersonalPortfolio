@@ -6,149 +6,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Web Design, Front End, coding, programming, HTML, CSS, SASS, python"> 
     <meta name="description" content="G.D.S Web Design owner's resume">
-    <link rel="stylesheet" href="../css/style_sass.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index_bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>G.D.S Web Design - Resume</title>
 </head>
 <body>
-    <!-- Esta es la página resume en formato Grid-->
-    <div id="body__fatherGridResume">
-        <header class="header__resume">
-            <a class="headerFooter__logo" href="../index.html"><img src="../images/logo.png" alt="logo"></a>
-            <nav> 
-                <ul>
-                    <li><a href="../index.html">Home </a></li>
-                    <li><a href="../pages/works.html">Works </a></li>
-                    <li><a href="../pages/about.html">About </a></li>
-                    <li><a href="../pages/resume.html">Resume </a></li>
-                    <li><a href="../pages/contact.html">Contact </a></li>
-                </ul>
-            </nav>
-            <ul class="headerFooter__contactLogos">
-                <li><a href="https://github.com/GermanSiliprandi"><img src="../images/github.png" alt="githubLink"></a></li>
-                <li><a href="https://www.linkedin.com/in/german-daniel-siliprandi-2487a082/"><img src="../images/linkedin.png" alt="linkedinLink"></a></li>
-                <li><a href="mailto:german.siliprandi@gmail.com"><img src="../images/gmail.png" alt="mailLink"></a></li>
-            </ul>
+    <!-- Bootstrap Resume-->
+    <div class="container-fluid">
+        <header class="sticky-top">
+            <div class="row d-none d-md-flex mb-4 background-color-07 align-items-center justify-content-between headerFooter__height">
+                    <div class="col-md-auto padding-0">
+                    <a href="../index.html"><img class="headerFooter__logo float-start" src="../images/logo.png" alt="logo"></a>
+                    </div>
+                    <div class=" col-md-7 col-xl-6 justify-content-between padding-0  ">
+                        <div class="navbar padding-0  ">
+                            <a href="../index.html">Home </a>
+                            <a href="../pages/works.html">Works </a>
+                            <a href="../pages/about.html">About </a>
+                            <a href="../pages/resume.html">Resume </a>
+                            <a href="../pages/contact.html">Contact </a>
+                        </div> 
+                    </div>
+                    <div class="col-md-auto padding-0 ">
+                    <ul class="list-group list-unstyled list-group-horizontal align-items-center justify-content-end padding-0 ">   
+                        <li><a href="https://github.com/GermanSiliprandi"><img class="headerFooter__contactLogos" src="../images/github.png" alt="githubLink"></a></li>
+                        <li><a href="https://www.linkedin.com/in/german-daniel-siliprandi-2487a082/"><img  class="headerFooter__contactLogos"src="../images/linkedin.png" alt="linkedinLink"></a></li>
+                        <li><a href="mailto:german.siliprandi@gmail.com"><img class="headerFooter__contactLogos" src="../images/gmail.png" alt="mailLink"></a></li>
+                    </ul> 
+                    </div>
+            </div>
+            <div class="row d-flex d-md-none mb-4 background-color-07 align-items-center justify-content-between headerFooter__height">
+                <div class="col-auto padding-0">
+                <a href="../index.html"><img class="headerFooter__logo float-start" src="../images/logo.png" alt="logo"></a>
+                </div>
+                <div class=" col-auto padding-0 ">
+                    <a class="nav-link dropdown" data-bs-toggle="dropdown" href="" role="button" aria-expanded="false"><img src="../images/mobile_menu.png" alt="mobileMenu"></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item bold" href="../index.html">Home</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item bold" href="../pages/works.html">Works</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item bold" href="../pages/about.html">About</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item bold" href="../pages/resume.html">Resume</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item bold" href="../pages/contact.html">Contact</a></li>
+                        </ul>
+                </div>
+                <div class="col-auto padding-0 ">
+                <ul class="list-group list-unstyled list-group-horizontal align-items-center justify-content-end padding-0 headerFooter__contactLogosList ">   
+                    <li><a href="https://github.com/GermanSiliprandi"><img class="headerFooter__contactLogos" src="../images/github.png" alt="githubLink"></a></li>
+                    <li><a href="https://www.linkedin.com/in/german-daniel-siliprandi-2487a082/"><img  class="headerFooter__contactLogos"src="../images/linkedin.png" alt="linkedinLink"></a></li>
+                    <li><a href="mailto:german.siliprandi@gmail.com"><img class="headerFooter__contactLogos" src="../images/gmail.png" alt="mailLink"></a></li>
+                </ul> 
+                </div>
+        </div>
         </header>
-        <main class="main__Resume">
+        <main>
             <article>
-                <section class="main__imageResume">
-                    <img  src="../images/gs_photo.png" alt="myPhoto">
+                <section class="row align-items-center justify-content-center section__myPhoto">
+                    <div class="col-12">
+                        <img src="../images/gs_photo.png" alt="myPhoto">
+                    </div>
                 </section>
-                <section class="main__personalInfoResume">
-                    <h1>Personal Information</h1>
-                    <table>
-                        <tr>
-                            <th>Full Name</th>
-                            <th>Country</th>
-                            <th>Mail</th>
-                        </tr>
-                        <tr>
-                            <td>German Daniel Siliprandi</td>
-                            <td>Argentina</td>
-                            <td>german.siliprandi@gmail.com</td>
-                        </tr>
-                    </table>
-                </section>
-                <section class="main__jobExperienceResume">
-                    <h1>Job Experience</h1>
-                    <ul class="main__jobResume main__jobResume--job1">
-                        <div class="main__jobResumeH2">
-                            <li><h2>Park Security / Parks Inspector and Personnel Supervisor (weekends)</h2></li>
-                            <li><h2>City of Buenos Aires Government</h2></li>
-                            <li><h2> 04/2015 - 06/2017 </h2></li>
+                <section>
+                    <div class="row justify-content-center ">
+                        <div class="col-auto">
+                            <h1>Personal Information</h1>
                         </div>
-                        <!-- Unordered job tasks list -->
-                        <li class="main__resumeTasks">
-                            <ul>
-                                <li>Task1: Enforce the regulations of the City of Buenos Aires.</li>
-                                <li>Task2: Accident prevention and problem solving.</li>
-                                <li>Task3: Report writing about parks issues.</li>
-                                <li>Task4: Parks security personnel supervision (15 parks, in charge of up to 12 people).</li>
-                                <li>Task5: Developed plans in collaboration with General Directorate of Green Spaces about parks issues and their possible solutions.</li>
-                                <li>Task6: Decision making about parks issues and security.</li>
-                                <li>Task7: Plan an efficient distribution of personnel</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="main__jobResume main__jobResume--job2">
-                        <div class="main__jobResumeH2">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <table class=" table table-bordered align-middle">
+                                <tr>
+                                    <th>Full Name</th>
+                                    <th>Country</th>
+                                    <th>Mail</th>
+                                </tr>
+                                <tr>
+                                    <td>German Daniel Siliprandi</td>
+                                    <td>Argentina</td>
+                                    <td>german.siliprandi@gmail.com</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <h1>Job Experience</h1>
+                        </div>
+                    </div>
+                    <div class=" row mb-4 justify-content-evenly">
+                        <ul class=" list-group resume__rowHeight radial-gradient jobExperience col-3 list-unstyled align-items-center">
+                                <li><h2>Park Security / Parks Inspector and Personnel Supervisor (weekends)</h2></li>
+                                <li><h2>City of Buenos Aires Government</h2></li>
+                                <li><h2> 04/2015 - 06/2017 </h2></li>
+                            <!-- Unordered job tasks list -->
+                                <li>
+                                    <ul class="list-group">
+                                        <li>Task1: Enforce the regulations of the City of Buenos Aires.</li>
+                                        <li>Task2: Accident prevention and problem solving.</li>
+                                        <li>Task3: Report writing about parks issues.</li>
+                                        <li>Task4: Parks security personnel supervision (15 parks, in charge of up to 12 people).</li>
+                                        <li>Task5: Developed plans in collaboration with General Directorate of Green Spaces about parks issues and their possible solutions.</li>
+                                        <li>Task6: Decision making about parks issues and security.</li>
+                                        <li>Task7: Plan an efficient distribution of personnel</li>
+                                    </ul>
+                                </li>
+                        </ul>
+                        <ul class=" list-group resume__rowHeight radial-gradient jobExperience col-3 list-unstyled align-items-center ">
                             <li><h2>Industrial Risk Analyst</h2></li>
                             <li><h2>Estudio Ingeniero Solano</h2></li>
-                            <li><h2> 06/2017 - 11/2020</h2></li>
-                        </div>
+                            <li><h2> 06/2017 - 11/2020 </h2></li>
                         <!-- Unordered job tasks list -->
-                        <li class="main__resumeTasks">
-                            <ul>
-                                <li>Task1: Field survey in chemical industries</li>
-                                <li>Task2: Explosive atmospheres, fire hazard and risk reports (Quantitative risk analysis, explosive atmospheres).</li>
-                                <li>Task3: Put in place recommended guidelines for mitigating explosive atmospheres</li>
-                                <li>Task4: HAZOP reports</li>
-                                <li>Task5: P&ID, layout, cause effect matrix and process analysis</li>
-                                <li>Task6: Microsoft Access databases modifications.</li>
-                                <li>Task7: Microsoft Word Macros</li>
-                                <li>Task8: ISO 9001 knowledge.</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="main__jobResume main__jobResume--job3">
-                        <div class="main__jobResumeH2">
-                            <li><h2>Product Engineer<P</h2></li>
+                            <li>
+                                <ul class="list-group">
+                                    <li>Task1: Field survey in chemical industries</li>
+                                    <li>Task2: Explosive atmospheres, fire hazard and risk reports (Quantitative risk analysis, explosive atmospheres).</li>
+                                    <li>Task3: Put in place recommended guidelines for mitigating explosive atmospheres</li>
+                                    <li>Task4: HAZOP reports</li>
+                                    <li>Task5: P&ID, layout, cause effect matrix and process analysis</li>
+                                    <li>Task6: Microsoft Access databases modifications.</li>
+                                    <li>Task7: Microsoft Word Macros</li>
+                                    <li>Task8: ISO 9001 knowledge.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class=" list-group resume__rowHeight radial-gradient jobExperience col-3 list-unstyled align-items-center ">
+                            <li><h2>Product Engineert</h2></li>
                             <li><h2>Dunlop Argentina S.A.</h2></li>
-                            <li><h2>11/2020 - Present</h2></li>
-                        </div>
+                            <li><h2> 11/2020 - Present </h2></li>
                         <!-- Unordered job tasks list -->
-                        <li class="main__resumeTasks">
-                            <ul>
-                                <li>Task1: Product and process design</li>
-                                <li>Task2: Mooney viscosity and rheometry test making and analysis  </li>
-                                <li>Task3: Daily production problem solving</li>
-                                <li>Task4: Search for new raw materials suppliers</li>
-                                <li>Task5: Product design </li>
-                                <li>Task6: Rubber mixture design</li>
-                            </ul>
-                        </li>
-                    </ul>    
+                            <li>
+                                <ul class="list-group">
+                                    <li>Task1: Product and process design</li>
+                                    <li>Task2: Mooney viscosity and rheometry test making and analysis  </li>
+                                    <li>Task3: Daily production problem solving</li>
+                                    <li>Task4: Search for new raw materials suppliers</li>
+                                    <li>Task5: Product design </li>
+                                    <li>Task6: Rubber mixture design</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>   
                 </section>
-                <section class="main__studiesResume">
-                    <h1>Studies</h1>
-                    <ul class="main__studyResume main__studyResume--study1">
-                        <li><h2>Chemical Engineer</h2></li>
-                        <li><h2>University of Buenos Aires (U.B.A)</h2></li>
-                        <li><h2>2009 - 2019</h2></li>
-                    </ul>
-                    <ul class="main__studyResume main__studyResume--study2">
-                        <li><h2>Web Designer</h2></li>
-                        <li><h2>Coderhouse</h2></li>
-                        <li><h2> 07/2021 - 09/2021</h2></li>
-                    </ul>
+                <section>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <h1>Studies</h1>
+                        </div>
+                    </div>
+                    <div class=" row mb-4 justify-content-evenly">
+                        <ul class=" resume__rowHeight list-group radial-gradient studies col-3 list-unstyled align-items-center ">
+                            <li><h2>Chemical Engineer</h2></li>
+                            <li><h2>University of Buenos Aires (U.B.A)</h2></li>
+                            <li><h2>2009 - 2019</h2></li>
+                        </ul>
+                        <ul class=" resume__rowHeight list-group radial-gradient studies col-3 list-unstyled align-items-center ">
+                            <li><h2>Web Design</h2></li>
+                            <li><h2>Coderhouse</h2></li>
+                            <li><h2> 07/2021 - 09/2021</h2></li>
+                            <li><h2><a href="https://www.coderhouse.com/certificados/61522f0258186b00185bd2eb?lang=en">Certificate</a></h2></li>
+                        </ul>
+                        <ul class=" resume__rowHeight list-group radial-gradient studies col-3 list-unstyled align-items-center ">
+                            <li><h2>Full Stack Web Developer Career</h2></li>
+                            <li><h2>Coderhouse.</h2></li>
+                            <li><h2> 07/2021 - 07/2022 </h2></li>
+                        </ul>
+                    </div>
                 </section>
-                <section class="main__skillsResume">
-                    <h1>Skills</h1>
-                    <ul class="main__skillResume main__skillResume--skill1">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>SASS</li>
-                        <li>Github</li>
-                    </ul>
-                    <ul class="main__skillResume main__skillResume--skill2">
-                        <li>Python</li>
-                        <li>Matlab</li>
-                        <li>Figma</li>
-                        <li>Git</li>
-                    </ul>
+                <section>
+                    <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <h1>Skills</h1>
+                        </div>
+                    </div>
+                    <div class=" row mb-4 justify-content-evenly">
+                        <ul class=" list-group resume__rowHeight radial-gradient skills col-3  align-items-center ">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>BOOTSTRAP</li>
+                        </ul>
+                        <ul class=" list-group resume__rowHeight radial-gradient skills col-3 align-items-center ">
+                            <li>SASS</li>
+                            <li>GIT</li>
+                            <li>GITHUB</li>
+                        </ul>
+                        <ul class=" list-group resume__rowHeight radial-gradient skills col-3 align-items-center ">
+                            <li>PYTHON</li>
+                            <li>MATLAB</li>
+                            <li>FIGMA</li>
+                        </ul>
+                    </div>
                 </section>
             </article>
         </main>
-        <footer class="footer__Resume">
-            <a class="headerFooter__logo" href="../index.html"><img src="../images/logo.png" alt="logo"></a>
-            <p>Designed by German Siliprandi</p>
-            <ul class="headerFooter__contactLogos">   
-                <li><a href="https://github.com/GermanSiliprandi"><img src="../images/github.png" alt="githubLink"></a></li>
-                <li><a href="https://www.linkedin.com/in/german-daniel-siliprandi-2487a082/"><img src="../images/linkedin.png" alt="linkedinLink"></a></li>
-                <li><a href="mailto:german.siliprandi@gmail.com"><img src="../images/gmail.png" alt="mailLink"></a></li>
-            </ul> 
+        <footer>
+            <div class="row background-color-09 align-items-center justify-content-between headerFooter__height">
+                <div class="col-auto  padding-0">
+                    <a href="../index.html"><img class="headerFooter__logo float-start" src="../images/logo.png" alt="logo"></a>
+                </div>
+                <div class="col-auto col-md-auto padding-0   ">
+                    <p class="footer__p">Designed by German Siliprandi</p>
+                </div>
+                <div class="col-auto padding-0">
+                    <ul class="list-group list-unstyled list-group-horizontal align-items-center justify-content-end padding-0">   
+                        <li><a href="https://github.com/GermanSiliprandi"><img class="headerFooter__contactLogos" src="../images/github.png" alt="githubLink"></a></li>
+                        <li><a href="https://www.linkedin.com/in/german-daniel-siliprandi-2487a082/"><img  class="headerFooter__contactLogos"src="../images/linkedin.png" alt="linkedinLink"></a></li>
+                        <li><a href="mailto:german.siliprandi@gmail.com"><img class="headerFooter__contactLogos" src="../images/gmail.png" alt="mailLink"></a></li>
+                    </ul> 
+                </div>
+            </div>
         </footer>
     </div>
+    <script src="../js/bootstrap.bundle.min.js"> </script>
 </body>
 </html>

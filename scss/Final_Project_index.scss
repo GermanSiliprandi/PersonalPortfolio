@@ -1,3 +1,6 @@
+/*Variables*/
+$bold: "Post No Bills Colombo Bold";
+/*CSS*/
 @font-face {
     font-family: "Post No Bills Colombo SemiBold" ;
     src: url(../fonts/postnobillscolombo-semibold.ttf) format("truetype");
@@ -9,7 +12,7 @@
 *{
     margin: 0px;
     padding: 0px;
-}
+}  
 body {
     background-image: url(../images/body_background.jpg);
     background-repeat:repeat;
@@ -58,13 +61,13 @@ body {
     background-image:  radial-gradient(rgba(39, 38, 41, 0.8) 20% ,rgba(39, 38, 41, 0.7) 40%,rgba(39, 38, 41, 0.5) 60%, rgba(39, 38, 41, 0.3) 80%);
 }
 .bold{
-    font-family: "Post No Bills Colombo Bold" ;
+    font-family: $bold ;
 }
 .navbar{
     font-size: 3.5vw;
     a{
         text-decoration: none;
-        font-family: "Post No Bills Colombo Bold";
+        font-family: $bold;
         color: white;
     }
 }
@@ -81,11 +84,18 @@ body {
     padding:0px;
 }
 h1{
-    font-family: "Post No Bills Colombo Bold";
+    font-family: $bold;
     font-style: normal;
     font-size: 4vw;
     text-decoration: underline;
     margin-bottom: 15px;
+}
+h2{
+    font-family: $bold;
+    font-style: normal;
+    font-size: 3vw;
+    text-decoration: underline;
+    margin-bottom: 12px;
 }
 p{
     font-size: 3vw;
@@ -95,11 +105,51 @@ p{
     margin: 0px;
     padding: 0px;
 }
+/*Resume */
+.table {
+    font-style: normal;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    font-size: 3vw;
+    color: white; 
+    th {
+    font-family: $bold; 
+    }
+}
+.studies{
+    padding: 10px 10px 0px 10px; 
+}
+.jobExperience{
+@extend .studies; 
+    li{
+        margin: 0px !important;
+        li{
+            list-style: url(../images/star.png);
+            font-size: 2.5vw;
+            margin-bottom: 10px !important;
+            list-style-position: inside;
+        }
+    }
+}
+.skills{
+    @extend .studies;
+        li{
+            list-style: url(../images/star.png);
+            font-size: 3vw;
+            margin-bottom: 10px !important;
+            list-style-position: inside;
+            font-family: $bold;
+        }
+    }
+.resume__rowHeight{
+    height: fit-content !important;
+}
 /*Contact Form*/
 form{
     label{
         font-size: 3vw !important;
-        font-family: "Post No Bills Colombo Bold";
+        font-family: $bold;
     }
     select{
         font-size: 3vw !important;
@@ -127,12 +177,33 @@ form{
     h1{
         font-size: 30px;
     }
+    h2{
+        font-size: 25px;
+    }
     p{
         font-size: 18px;
     }
     /*Footer*/
 .footer__p{
     font-size: 20px;
+    }
+    /*Resume */
+    .table {
+    font-size: 25px;
+    }
+    .jobExperience{
+        li{
+            li{
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .skills{
+        li{
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
     }
     /*Contact Form*/
     form{
