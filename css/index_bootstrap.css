@@ -16,9 +16,7 @@
 }
 
 body {
-	background-image: url(../images/body_background.jpg);
-	background-repeat: repeat;
-	background-size: contain;
+	background-color: #282c35;
 	font-family: "Post No Bills Colombo SemiBold";
 	color: white;
 	text-align: center;

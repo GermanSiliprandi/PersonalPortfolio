@@ -1,130 +1,168 @@
 @font-face {
-  font-family: "Post No Bills Colombo SemiBold";
-  src: url(../fonts/postnobillscolombo-semibold.ttf) format("truetype"); }
+	font-family: "Post No Bills Colombo SemiBold";
+	src: url(../fonts/postnobillscolombo-semibold.ttf) format("truetype");
+}
 
 @font-face {
-  font-family: "Post No Bills Colombo Bold";
-  src: url(../fonts/postnobillscolombo-bold.ttf) format("truetype"); }
+	font-family: "Post No Bills Colombo Bold";
+	src: url(../fonts/postnobillscolombo-bold.ttf) format("truetype");
+}
 
 /*Variables*/
 * {
-  margin: 0px;
-  padding: 0px; }
+	margin: 0px;
+	padding: 0px;
+}
 
 body {
-  background-image: url(../images/body_background.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-  font-family: "Post No Bills Colombo SemiBold";
-  color: white;
-  text-align: center; }
+	background-color: #282c35;
+	background-repeat: repeat;
+	background-size: contain;
+	font-family: "Post No Bills Colombo SemiBold";
+	color: white;
+	text-align: center;
+}
 
 /*Logo*/
 .headerFooter__logo {
-  width: 25vw; }
+	width: 25vw;
+}
 
 /*Contact Logos*/
 .headerFooter__contactLogos {
-  width: 9vw; }
+	width: 9vw;
+}
 
 /*Tabla Works*/
 .table {
-  font-style: normal;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  width: 90vw;
-  font-size: 3vw;
-  color: white; }
-  .table th {
-    font-family: "Post No Bills Colombo Bold"; }
-  .table a img {
-    width: 25vw; }
+	font-style: normal;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	width: 90vw;
+	font-size: 3vw;
+	color: white;
+}
+.table th {
+	font-family: "Post No Bills Colombo Bold";
+}
+.table a img {
+	width: 25vw;
+}
 
 /*my photo*/
 .section__myPhoto {
-  margin-bottom: 40px; }
-  .section__myPhoto img {
-    width: 100px; }
+	margin-bottom: 40px;
+}
+.section__myPhoto img {
+	width: 100px;
+}
 
 /*bootstrap modifications*/
 .mb-4 {
-  margin-bottom: 40px !important; }
+	margin-bottom: 40px !important;
+}
 
 .background-color-07 {
-  background-color: rgba(39, 38, 41, 0.7); }
+	background-color: rgba(39, 38, 41, 0.7);
+}
 
 .background-color-09 {
-  background-color: rgba(39, 38, 41, 0.9); }
+	background-color: rgba(39, 38, 41, 0.9);
+}
 
 .bold {
-  font-family: "Post No Bills Colombo Bold"; }
+	font-family: "Post No Bills Colombo Bold";
+}
 
 .navbar {
-  font-size: 3.5vw; }
-  .navbar a {
-    text-decoration: none;
-    font-family: "Post No Bills Colombo Bold";
-    color: white; }
+	font-size: 3.5vw;
+}
+.navbar a {
+	text-decoration: none;
+	font-family: "Post No Bills Colombo Bold";
+	color: white;
+}
 
 .headerFooter__height {
-  height: 80px; }
+	height: 80px;
+}
 
 .border {
-  border: solid; }
+	border: solid;
+}
 
 .img-fluid {
-  width: 100%; }
+	width: 100%;
+}
 
 h1 {
-  font-family: "Post No Bills Colombo Bold";
-  font-style: normal;
-  font-size: 4vw;
-  text-decoration: underline;
-  margin-bottom: 15px; }
+	font-family: "Post No Bills Colombo Bold";
+	font-style: normal;
+	font-size: 4vw;
+	text-decoration: underline;
+	margin-bottom: 15px;
+}
 
 .footer__p {
-  font-size: 3vw;
-  margin: 0px;
-  padding: 0px; }
+	font-size: 3vw;
+	margin: 0px;
+	padding: 0px;
+}
 
 .padding-0 {
-  padding: 0px; }
+	padding: 0px;
+}
 
 @media only screen and (min-width: 768px) {
-  .navbar {
-    font-size: 30px; }
-  /*Logo*/
-  .headerFooter__logo {
-    width: 140px; }
-  /*Contact Logos*/
-  .headerFooter__contactLogos {
-    width: 40px; }
-  .footer__p {
-    font-size: 20px; }
-  /* Works Table */
-  .table {
-    width: 80vw;
-    font-size: 18px; }
-    .table td a img {
-      width: 20vw; }
-  /*Generic Format*/
-  h1 {
-    font-size: 30px; } }
+	.navbar {
+		font-size: 30px;
+	}
+	/*Logo*/
+	.headerFooter__logo {
+		width: 140px;
+	}
+	/*Contact Logos*/
+	.headerFooter__contactLogos {
+		width: 40px;
+	}
+	.footer__p {
+		font-size: 20px;
+	}
+	/* Works Table */
+	.table {
+		width: 80vw;
+		font-size: 18px;
+	}
+	.table td a img {
+		width: 20vw;
+	}
+	/*Generic Format*/
+	h1 {
+		font-size: 30px;
+	}
+}
 
 @media only screen and (min-width: 1200px) {
-  .navbar {
-    font-size: 35px; }
-  /*Logo*/
-  .headerFooter__logo {
-    width: 170px; }
-  /*Contact Logos*/
-  .headerFooter__contactLogos {
-    width: 50px; }
-  .footer__p {
-    font-size: 20px; }
-  /* Works Table */
-  .table {
-    width: 65vw; }
-    .table td a img {
-      width: 15vw; } }
+	.navbar {
+		font-size: 35px;
+	}
+	/*Logo*/
+	.headerFooter__logo {
+		width: 170px;
+	}
+	/*Contact Logos*/
+	.headerFooter__contactLogos {
+		width: 50px;
+	}
+	.footer__p {
+		font-size: 20px;
+	}
+	/* Works Table */
+	.table {
+		width: 65vw;
+	}
+	.table td a img {
+		width: 15vw;
+	}
+}
