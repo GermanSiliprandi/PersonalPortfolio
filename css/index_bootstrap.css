@@ -1,208 +1,235 @@
 /*Variables*/
 /*CSS*/
 @font-face {
-  font-family: "Post No Bills Colombo SemiBold";
-  src: url(../fonts/postnobillscolombo-semibold.ttf) format("truetype"); }
+	font-family: "Post No Bills Colombo SemiBold";
+	src: url(../fonts/postnobillscolombo-semibold.ttf) format("truetype");
+}
 
 @font-face {
-  font-family: "Post No Bills Colombo Bold";
-  src: url(../fonts/postnobillscolombo-bold.ttf) format("truetype"); }
+	font-family: "Post No Bills Colombo Bold";
+	src: url(../fonts/postnobillscolombo-bold.ttf) format("truetype");
+}
 
 * {
-  margin: 0px;
-  padding: 0px; }
+	margin: 0px;
+	padding: 0px;
+}
 
 body {
-  background-image: url(../images/body_background.jpg);
-  background-repeat: repeat;
-  background-size: contain;
-  font-family: "Post No Bills Colombo SemiBold";
-  color: white;
-  text-align: center; }
+	background-image: url(../images/body_background.jpg);
+	background-repeat: repeat;
+	background-size: contain;
+	font-family: "Post No Bills Colombo SemiBold";
+	color: white;
+	text-align: center;
+}
 
+.mainHeight {
+	height: calc(100vh - 160px);
+}
 /*Logo*/
 .headerFooter__logo {
-  width: 25vw; }
+	width: 25vw;
+}
 
 /*Contact Logos*/
 .headerFooter__contactLogos {
-  width: 9vw; }
+	width: 9vw;
+}
 
 /*My Photo*/
 .section__myPhoto {
-  margin-bottom: 40px; }
-  .section__myPhoto img {
-    width: 100px; }
-  .section__myPhoto img:hover {
-    animation: flip;
-    animation-duration: 2s; }
+	margin-bottom: 40px;
+}
+.section__myPhoto img {
+	width: 100px;
+}
+.section__myPhoto img:hover {
+	animation: flip;
+	animation-duration: 2s;
+}
 
 /*Bootstrap Modifications and new classes*/
 .mt-1 {
-  margin-top: 15px !important; }
+	margin-top: 15px !important;
+}
 
 .mb-1 {
-  margin-bottom: 15px !important; }
+	margin-bottom: 15px !important;
+}
 
 .mb-4 {
-  margin-bottom: 40px !important; }
+	margin-bottom: 40px !important;
+}
 
 .background-color-07 {
-  background-color: rgba(39, 38, 41, 0.7); }
+	background-color: rgba(39, 38, 41, 0.7);
+}
 
 .background-color-09 {
-  background-color: rgba(39, 38, 41, 0.9); }
+	background-color: rgba(39, 38, 41, 0.9);
+}
 
 .radial-gradient {
-  background-image: radial-gradient(rgba(39, 38, 41, 0.8) 20%, rgba(39, 38, 41, 0.7) 40%, rgba(39, 38, 41, 0.5) 60%, rgba(39, 38, 41, 0.3) 80%); }
+	background-image: radial-gradient(
+		rgba(39, 38, 41, 0.8) 20%,
+		rgba(39, 38, 41, 0.7) 40%,
+		rgba(39, 38, 41, 0.5) 60%,
+		rgba(39, 38, 41, 0.3) 80%
+	);
+}
 
 .bold {
-  font-family: "Post No Bills Colombo Bold"; }
+	font-family: "Post No Bills Colombo Bold";
+}
 
 .navbar {
-  font-size: 3.5vw; }
-  .navbar a {
-    text-decoration: none;
-    font-family: "Post No Bills Colombo Bold";
-    color: white; }
+	font-size: 3.5vw;
+}
+.navbar a {
+	text-decoration: none;
+	font-family: "Post No Bills Colombo Bold";
+	color: white;
+}
 
 .headerFooter__height {
-  height: 80px; }
+	height: 80px;
+}
 
 .border {
-  border: solid; }
+	border: solid;
+}
 
 .img-fluid {
-  width: 100%; }
+	width: 100%;
+}
 
 .padding-0 {
-  padding: 0px; }
+	padding: 0px;
+}
 
 h1 {
-  font-family: "Post No Bills Colombo Bold";
-  font-style: normal;
-  font-size: 4vw;
-  text-decoration: underline;
-  margin-bottom: 15px; }
+	font-family: "Post No Bills Colombo Bold";
+	font-style: normal;
+	font-size: 4vw;
+	text-decoration: underline;
+	margin-bottom: 15px;
+}
 
 h2 {
-  font-family: "Post No Bills Colombo Bold";
-  font-style: normal;
-  font-size: 3vw;
-  text-decoration: underline;
-  margin-bottom: 12px; }
+	font-family: "Post No Bills Colombo Bold";
+	font-style: normal;
+	font-size: 3vw;
+	text-decoration: underline;
+	margin-bottom: 12px;
+}
 
 p {
-  font-size: 3vw; }
-
+	font-size: 3vw;
+}
 .footer__p {
-  font-size: 3vw;
-  margin: 0px;
-  padding: 0px; }
+	font-size: 3vw;
+	margin: 0px;
+	padding: 0px;
+}
 
 /*Resume */
 .table {
-  font-style: normal;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
-  font-size: 3vw;
-  color: white; }
-  .table th {
-    font-family: "Post No Bills Colombo Bold"; }
+	font-style: normal;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	font-size: 3vw;
+	color: white;
+}
+.table th {
+	font-family: "Post No Bills Colombo Bold";
+}
 
-.studies, .jobExperience, .skills {
-  padding: 10px 10px 0px 10px; }
+.studies,
+.jobExperience,
+.skills {
+	padding: 10px 10px 0px 10px;
+}
 
 .jobExperience li {
-  margin: 0px !important; }
-  .jobExperience li li {
-    list-style: url(../images/star.png);
-    font-size: 2.5vw;
-    margin-bottom: 10px !important;
-    list-style-position: inside; }
+	margin: 0px !important;
+}
+.jobExperience li li {
+	list-style: url(../images/star.png);
+	font-size: 2.5vw;
+	margin-bottom: 10px !important;
+	list-style-position: inside;
+}
 
 .skills li {
-  list-style: url(../images/star.png);
-  font-size: 3vw;
-  margin-bottom: 10px !important;
-  list-style-position: inside;
-  font-family: "Post No Bills Colombo Bold"; }
+	list-style: url(../images/star.png);
+	font-size: 3vw;
+	margin-bottom: 10px !important;
+	list-style-position: inside;
+	font-family: "Post No Bills Colombo Bold";
+}
 
 .resume__rowHeight {
-  height: fit-content !important; }
-
-/*Contact Form*/
-form label {
-  font-size: 3vw !important;
-  font-family: "Post No Bills Colombo Bold"; }
-
-form select {
-  font-size: 3vw !important; }
-
-form input {
-  font-size: 3vw !important; }
-
-form textarea {
-  font-size: 3vw !important; }
+	height: fit-content !important;
+}
 
 @media only screen and (min-width: 768px) {
-  .navbar {
-    font-size: 30px; }
-  /*Logo*/
-  .headerFooter__logo {
-    width: 140px; }
-  /*Contact Logos*/
-  .headerFooter__contactLogos {
-    width: 40px; }
-  /*Generic Format*/
-  h1 {
-    font-size: 30px; }
-  h2 {
-    font-size: 25px; }
-  p {
-    font-size: 18px; }
-  /*Footer*/
-  .footer__p {
-    font-size: 20px; }
-  /*Resume */
-  .table {
-    font-size: 25px; }
-  .jobExperience li li {
-    font-size: 20px;
-    margin-bottom: 15px; }
-  .skills li {
-    font-size: 25px;
-    margin-bottom: 15px; }
-  /*Contact Form*/
-  form label {
-    font-size: 20px !important; }
-  form select {
-    font-size: 20px !important; }
-  form input {
-    font-size: 20px !important; }
-  form textarea {
-    font-size: 20px !important; } }
+	.navbar {
+		font-size: 30px;
+	}
+	/*Logo*/
+	.headerFooter__logo {
+		width: 140px;
+	}
+	/*Contact Logos*/
+	.headerFooter__contactLogos {
+		width: 40px;
+	}
+	/*Generic Format*/
+	h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+	p {
+		font-size: 18px;
+	}
+	/*Footer*/
+	.footer__p {
+		font-size: 20px;
+	}
+	/*Resume */
+	.table {
+		font-size: 25px;
+	}
+	.jobExperience li li {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+	.skills li {
+		font-size: 25px;
+		margin-bottom: 15px;
+	}
 
-@media only screen and (min-width: 1200px) {
-  .navbar {
-    font-size: 35px; }
-  /*Logo*/
-  .headerFooter__logo {
-    width: 170px; }
-  /*Contact Logos*/
-  .headerFooter__contactLogos {
-    width: 50px; }
-  .footer__p {
-    font-size: 23px; }
-  p {
-    font-size: 23px; }
-  /*Contact Form*/
-  form label {
-    font-size: 23px !important; }
-  form select {
-    font-size: 23px !important; }
-  form input {
-    font-size: 23px !important; }
-  form textarea {
-    font-size: 23px !important; } }
+	@media only screen and (min-width: 1200px) {
+		.navbar {
+			font-size: 35px;
+		}
+		/*Logo*/
+		.headerFooter__logo {
+			width: 170px;
+		}
+		/*Contact Logos*/
+		.headerFooter__contactLogos {
+			width: 50px;
+		}
+		.footer__p {
+			font-size: 23px;
+		}
+		p {
+			font-size: 23px;
+		}
+	}
+}
